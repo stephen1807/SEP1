@@ -2,49 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79cecf26-4aa8-4bc5-9fa0-b6bef1f03f0e" name="Default" comment="add all the jsp files">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/1416412664171.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/1417593165541.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/142013403687.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/1420788431778.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/1421207067537.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/1421726012956.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/142172644254.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/1421734678611.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/142174136543.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/1421742102374.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/1421763729558.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/1421805477901.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/1421805669559.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/1421838333851.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/1421841277109.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/1421906192522_1140x0.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/social/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/banner.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/social/facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/social/guangbo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/navigation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/social/sina.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/slide.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/social/twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/fx.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/home.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/loginfont1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/loginfont2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/profile.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/stylelogin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/sublist.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/sublog.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/sublogedit.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/zepto.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -65,11 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-9.153846">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3361582">
+              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -88,6 +56,13 @@
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
@@ -292,26 +267,33 @@
       <created>1432273995411</created>
       <option name="number" value="Default" />
       <updated>1432273995411</updated>
-      <workItem from="1432273996040" duration="396000" />
+      <workItem from="1432273996040" duration="1615000" />
     </task>
+    <task id="LOCAL-00001" summary="add all the jsp files">
+      <created>1432274416886</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1432274416886</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="396000" />
+    <option name="totallyTimeSpent" value="1615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1382" height="728" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32982457" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982457" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982457" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32982457" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -332,6 +314,14 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -346,8 +336,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3361582">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
           <folding />
         </state>
       </provider>
