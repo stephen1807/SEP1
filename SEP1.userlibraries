@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Hibernate 4.2.2-4.2.2">
+    <archive path="C:/Users/Stephen/IdeaProjects/SEP1/lib/hibernate-commons-annotations-4.0.2.Final.jar" />
+    <archive path="C:/Users/Stephen/IdeaProjects/SEP1/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
+    <archive path="C:/Users/Stephen/IdeaProjects/SEP1/lib/antlr-2.7.7.jar" />
+    <archive path="C:/Users/Stephen/IdeaProjects/SEP1/lib/jboss-logging-3.1.0.GA.jar" />
+    <archive path="C:/Users/Stephen/IdeaProjects/SEP1/lib/dom4j-1.6.1.jar" />
+    <archive path="C:/Users/Stephen/IdeaProjects/SEP1/lib/javassist-3.15.0-GA.jar" />
+    <archive path="C:/Users/Stephen/IdeaProjects/SEP1/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" />
+    <archive path="C:/Users/Stephen/IdeaProjects/SEP1/lib/hibernate-core-4.2.2.Final.jar" />
+  </library>
+  <library name="mysql:mysql-connector-java:5.1.35">
+    <archive path="C:/Users/Stephen/IdeaProjects/SEP1/lib/mysql-connector-java-5.1.35.jar" />
+  </library>
+</eclipse-userlibraries>
+

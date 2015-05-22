@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/SEP1"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="TomEE 7.0.55" scope="PROVIDED"/>
+	<levels>
+		<level name="TomEE 7.0.55" value="application_server_libraries"/>
+		<level name="Hibernate 4.2.2-4.2.2" value="project"/>
+		<level name="mysql:mysql-connector-java:5.1.35" value="project"/>
+	</levels>
+</component>
