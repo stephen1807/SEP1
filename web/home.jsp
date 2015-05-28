@@ -4,7 +4,6 @@
   Date: 5/21/2015
   Time: 10:58 AM
   To change this template use File | Settings | File Templates.
-  v1.1 add some content
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
@@ -43,15 +42,15 @@
     <div class="search_wrap">
     </div>
     <ul>
-        <li class="nav_index menu_cur"><a href="home.jsp"><i></i><span>Home</span><b></b>
+        <li class="nav_index menu_cur"><a href="home.html"><i></i><span>Home</span><b></b>
 
             <div class="clear"></div>
         </a></li>
-        <li class="nav_site"><a href="profile.jsp"><i></i><span>Profile</span><b></b>
+        <li class="nav_site"><a href="profile.html"><i></i><span>Profile</span><b></b>
 
             <div class="clear"></div>
         </a></li>
-        <li class="nav_site"><a href="sublist.jsp"><i></i><span>Subordinate</span><b></b>
+        <li class="nav_site"><a href="sublist.html"><i></i><span>Subordinate</span><b></b>
 
             <div class="clear"></div>
         </a></li>
@@ -85,10 +84,8 @@
 <div id="container">
     <div id="sort">
     </div>
-    <div id="content" style="font-size:16px">
-        Welcome <%=session.getAttribute("name")%>,<br>
+    <div id="content">
 
-        Have a nice day and keep working :3
     </div>
 
     <div class="push_msk"></div>
