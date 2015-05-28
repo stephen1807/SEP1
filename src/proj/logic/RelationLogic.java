@@ -34,6 +34,21 @@ public class RelationLogic {
         return result;
     }
 
+    public List<Employee> getDirectSubordinates(int employeeID) {
+
+        List<Relation> list = rs.getRelation(employeeID);
+
+        List<Employee> result = new ArrayList<>();
+
+        EmployeeService es = EmployeeService.getInstance();
+
+        for (Relation r : list) {
+            result.add(es.getEmployee(r.getSubordinateid()));
+        }
+
+        return result;
+    }
+
     private void getSubordinates(int employeeID, Set<Integer> content) {
 
         //Get all subordinates
@@ -46,7 +61,7 @@ public class RelationLogic {
         } else {
             content.add(list.get(0).getSuperiorid());
             for (Relation r : list) {
-                getSubordinates(r.getSuperiorid(), content);
+                getSubordinates(r.getSubordinateid(), content);
             }
         }
 
