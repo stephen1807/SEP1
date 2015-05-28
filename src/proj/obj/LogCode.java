@@ -12,7 +12,7 @@ public class LogCode {
     private int logcode;
     private String logname;
     private String logdescription;
-    private float logcost;
+    private float logcost; //Per hour
 
     @Id
     @Column(name = "logcode")
