@@ -11,6 +11,7 @@
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.username">root</property>
         <property name="connection.password">18071993</property>
+        <property name="connection.autocommit">false</property>
         <mapping class="proj.obj.AttendanceLog"/>
         <mapping class="proj.obj.Employee"/>
         <mapping class="proj.obj.Permission"/>
