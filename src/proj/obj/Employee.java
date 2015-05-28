@@ -20,6 +20,7 @@ public class Employee {
     private char gender;
     private Date DOB;
     private int phone;
+    private float baseSalary;
 
     @Id
     @GeneratedValue
@@ -112,8 +113,19 @@ public class Employee {
         this.phone = phone;
     }
 
+    @Basic
+    @Column(name = "basesalary")
+    public float getBaseSalary() {
+        return baseSalary;
+    }
+
+    public void setBaseSalary(float baseSalary) {
+        this.baseSalary = baseSalary;
+    }
+
     @Override
     public boolean equals(Object o) {
+
         if (this == o) return true;
         if (!(o instanceof Employee)) return false;
 
@@ -124,6 +136,7 @@ public class Employee {
         if (departmentID != employee.departmentID) return false;
         if (gender != employee.gender) return false;
         if (phone != employee.phone) return false;
+        if (Float.compare(employee.baseSalary, baseSalary) != 0) return false;
         if (username != null ? !username.equals(employee.username) : employee.username != null) return false;
         if (userpass != null ? !userpass.equals(employee.userpass) : employee.userpass != null) return false;
         if (name != null ? !name.equals(employee.name) : employee.name != null) return false;
@@ -142,6 +155,7 @@ public class Employee {
         result = 31 * result + (int) gender;
         result = 31 * result + (DOB != null ? DOB.hashCode() : 0);
         result = 31 * result + phone;
+        result = 31 * result + (baseSalary != +0.0f ? Float.floatToIntBits(baseSalary) : 0);
         return result;
     }
 }

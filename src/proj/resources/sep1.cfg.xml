@@ -18,6 +18,7 @@
         <mapping class="proj.obj.PermissionGlobal"/>
         <mapping class="proj.obj.PermissionIndividual"/>
         <mapping class="proj.obj.Relation"/>
+        <mapping class="proj.obj.LogCode"/>
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
     </session-factory>
