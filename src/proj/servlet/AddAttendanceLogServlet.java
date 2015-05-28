@@ -79,7 +79,7 @@ public class AddAttendanceLogServlet extends HttpServlet {
         AttendanceLogService als = AttendanceLogService.getInstance();
         als.insertAttendanceLog(al);
 
-        request.getRequestDispatcher("/EditSuccess.jsp").forward(request, response);
+        request.getRequestDispatcher("/sublog.jsp").forward(request, response);
     }
 
     /**

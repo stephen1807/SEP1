@@ -45,7 +45,7 @@ public class AddPermissionServlet extends HttpServlet {
 
         PermissionService ps = PermissionService.getInstance();
         ps.insertPermission(permission);
-        request.getRequestDispatcher("/servlet/").forward(request, response);
+        request.getRequestDispatcher("/sublogedit.jsp").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

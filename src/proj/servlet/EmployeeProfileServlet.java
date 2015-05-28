@@ -65,7 +65,7 @@ public class EmployeeProfileServlet extends HttpServlet {
 
         request.setAttribute("employee", employee);
 
-        request.getRequestDispatcher("/employeeProfile.jsp").forward(request, response);
+        request.getRequestDispatcher("/profile.jsp").forward(request, response);
     }
 
     /**

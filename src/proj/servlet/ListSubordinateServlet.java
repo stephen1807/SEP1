@@ -1,7 +1,7 @@
 package proj.servlet;
 
-import proj.obj.AttendanceLog;
-import proj.service.AttendanceLogService;
+import proj.logic.RelationLogic;
+import proj.obj.Employee;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,19 +14,19 @@ import java.util.List;
 /**
  * Created by Yayaz_33 on 5/28/2015.
  */
-@WebServlet(name = "QueryLogServlet")
-public class QueryLogServlet extends HttpServlet {
+@WebServlet(name = "ListSubordinateServlet")
+public class ListSubordinateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         int employeeID = Integer.parseInt(request.getParameter("employeeID"));
 
-        AttendanceLogService service = AttendanceLogService.getInstance();
+        RelationLogic rl = new RelationLogic();
+        List<Employee> subordinateList = rl.getAllSubordinates(employeeID);
 
-        List<AttendanceLog> tempList = service.getAttendanceLog(employeeID);
+        request.setAttribute("subordinateList", subordinateList);
 
-        request.setAttribute("attendanceList", tempList);
+        request.getRequestDispatcher("/sublist.jsp").forward(request, response);
 
-        request.getRequestDispatcher("/sublog.jsp").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

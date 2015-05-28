@@ -61,10 +61,10 @@ public class LoginServlet extends HttpServlet {
         HttpSession session = request.getSession();
         if (employee.getEmployeetype() == 1) {
             session.setAttribute("userid", employee.getEmployeeID());
-            request.getRequestDispatcher("/admin.jsp").forward(request, response);
+            request.getRequestDispatcher("/home.jsp").forward(request, response);
         } else {
             session.setAttribute("userid", employee.getEmployeeID());
-            request.getRequestDispatcher("/employee.jsp").forward(request, response);
+            request.getRequestDispatcher("/home.jsp").forward(request, response);
         }
         //for logout
 //        session.removeAttribute("userid");
