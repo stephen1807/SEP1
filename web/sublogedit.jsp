@@ -29,8 +29,11 @@
   <meta content="black" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
   <link rel="apple-touch-icon-precomposed" href="http://www.17sucai.com/static/images/favicon.ico">
-  <script>
-    var logined = 0
+
+  <script type="javascript">
+    function test() {
+      alert("1");
+    }
   </script>
   <title>Attendance System</title>
 </head>
@@ -88,27 +91,33 @@
   <div id="sort">
   </div>
   <div id="content">
-    <table>
+    <table style="width: auto;  font-size:16px">
       <tr>
-        <th>Employee Name :</th>
-          <td><input type="text" name="name"></td>
+        <th align="right">Employee Name :</th>
+          <td><input type="text" id="name"></td>
       </tr>
       <tr>
-        <th>Date :</th>
-        <td><input id="date_timepicker_start" type="text" > to <input id="date_timepicker_end" type="text" ></td>
+        <th align="right">Start Time :</th>
+        <td><input id="date_timepicker_start" type="text"></td>
+        <td><input id="timepicker" type="text" ></td>
       </tr>
       <tr>
-        <th>Time :</th>
-        <td><input id="timepicker" type="text" > to <input id="timepicker1" type="text" ></td>
+        <th align="right">End Time :</th>
+        <td><input id="date_timepicker_end" type="text"></td>
+        <td><input id="timepicker1" type="text" ></td>
       </tr>
       <tr>
-        <th>Type</th>
-        <td><select>
+        <th align="right">Type :</th>
+        <td><select id="type">
           <option value="volvo">Volvo</option>
           <option value="saab">Saab</option>
           <option value="mercedes">Mercedes</option>
           <option value="audi">Audi</option>
         </select></td>
+      </tr>
+      <tr>
+        <th></th>
+        <td align="right"><input type="button" value="Save" onclick="test();"/></td>
       </tr>
     </table>
   </div>
@@ -136,33 +145,16 @@
 <script src="js/jquery.js"></script>
 <script src="js/jquery.datetimepicker.js"></script>
 <script>
-  jQuery('#datetimepicker1').datetimepicker({
-    lang:'de',
-    i18n:{
-      de:{
-        months:[
-          'Januar','Februar','März','April',
-          'Mai','Juni','Juli','August',
-          'September','Oktober','November','Dezember',
-        ],
-        dayOfWeek:[
-          "So.", "Mo", "Di", "Mi",
-          "Do", "Fr", "Sa.",
-        ]
-      }
-    },
-    timepicker:false,
-    format:'d.m.Y'
-  });
   jQuery(function(){
     jQuery('#date_timepicker_start').datetimepicker({
       format:'Y/m/d',
       onShow:function( ct ){
         this.setOptions({
-          maxDate:jQuery('#date_timepicker_end').val()?jQuery('#date_timepicker_end').val():false
+          minDate:0
         })
       },
-      timepicker:false
+      timepicker:false,
+      closeOnDateSelect:true
     });
     jQuery('#date_timepicker_end').datetimepicker({
       format:'Y/m/d',
@@ -171,6 +163,7 @@
           minDate:jQuery('#date_timepicker_start').val()?jQuery('#date_timepicker_start').val():false
         })
       },
+      closeOnDateSelect:true,
       timepicker:false
     });
   });
@@ -180,7 +173,7 @@
     format:'H:i'
   });
   jQuery('#timepicker1').datetimepicker({
-    datepicker:true,
+    datepicker:false,
     format:'H:i'
   });
 </script>
