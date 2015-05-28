@@ -12,7 +12,9 @@ public class LogCode {
     private int logcode;
     private String logname;
     private String logdescription;
-    private float logcost; //Per hour
+    private float logcost;
+    private String logunit;
+    private float logcost_permission;
 
     @Id
     @Column(name = "logcode")
@@ -52,5 +54,25 @@ public class LogCode {
 
     public void setLogcost(float logcost) {
         this.logcost = logcost;
+    }
+
+    @Basic
+    @Column(name = "logunit")
+    public String getLogunit() {
+        return logunit;
+    }
+
+    public void setLogunit(String logunit) {
+        this.logunit = logunit;
+    }
+
+    @Basic
+    @Column(name = "logcost_permission")
+    public float getLogcost_permission() {
+        return logcost_permission;
+    }
+
+    public void setLogcost_permission(float logcost_permission) {
+        this.logcost_permission = logcost_permission;
     }
 }
