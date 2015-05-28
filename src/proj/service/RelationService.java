@@ -9,6 +9,7 @@ import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 import proj.obj.Relation;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,11 +18,6 @@ import java.util.List;
  */
 public class RelationService {
     private static RelationService ourInstance = new RelationService();
-
-    public static RelationService getInstance() {
-        return ourInstance;
-    }
-
     SessionFactory factory;
 
     private RelationService() {
@@ -36,12 +32,16 @@ public class RelationService {
         }
     }
 
+    public static RelationService getInstance() {
+        return ourInstance;
+    }
+
     public List<Relation> getRelation(int superiorid) {
         Session session = factory.openSession();
 
         Transaction tr = null;
 
-        List<Relation> result = null;
+        List<Relation> result = new ArrayList<>();
 
         try {
 
