@@ -4,7 +4,7 @@
   Date: 5/21/2015
   Time: 1:21 PM
   To change this template use File | Settings | File Templates.
-  v1.1 adding content with jquery
+  v1.3 finish button function
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
@@ -30,10 +30,6 @@
   <meta content="telephone=no" name="format-detection">
   <link rel="apple-touch-icon-precomposed" href="http://www.17sucai.com/static/images/favicon.ico">
 
-  <script type="javascript">
-    function test() {
-      alert("1");
-    }
   </script>
   <title>Attendance System</title>
 </head>
@@ -93,8 +89,8 @@
   <div id="content">
     <table style="width: auto;  font-size:16px">
       <tr>
-        <th align="right">Employee Name :</th>
-          <td><input type="text" id="name"></td>
+        <th align="right">Employee ID :</th>
+          <td><input type="text" id="id"></td>
       </tr>
       <tr>
         <th align="right">Start Time :</th>
@@ -117,7 +113,7 @@
       </tr>
       <tr>
         <th></th>
-        <td align="right"><input type="button" value="Save" onclick="test();"/></td>
+        <td align="right"><input type="button" value="Save" onclick="dosave();"/></td>
       </tr>
     </table>
   </div>
@@ -176,5 +172,16 @@
     datepicker:false,
     format:'H:i'
   });
+  function dosave() {
+    alert("1");
+    var ID = document.getElementById("id").value;
+    var sdate = document.getElementById("date_timepicker_start").value;
+    var stime = document.getElementById("timepicker").value;
+    var edate = document.getElementById("date_timepicker_end").value;
+    var etime = document.getElementById("timepicker1").value;
+    var type = document.getElementById("type").value;
+
+    alert(ID+" "+sdate+" "+stime+" "+edate+" "+etime+" "+type);
+  }
 </script>
 </html>
