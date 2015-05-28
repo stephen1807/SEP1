@@ -4,6 +4,7 @@
   Date: 5/21/2015
   Time: 1:21 PM
   To change this template use File | Settings | File Templates.
+  v1.1 adding content with jquery
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
@@ -44,15 +45,15 @@
   <div class="search_wrap">
   </div>
   <ul>
-    <li class="nav_index"><a href="home.html"><i></i><span>Home</span><b></b>
+    <li class="nav_index"><a href="home.jsp"><i></i><span>Home</span><b></b>
 
       <div class="clear"></div>
     </a></li>
-    <li class="nav_site"><a href="profile.html"><i></i><span>Profile</span><b></b>
+    <li class="nav_site"><a href="profile.jsp"><i></i><span>Profile</span><b></b>
 
       <div class="clear"></div>
     </a></li>
-    <li class="nav_site menu_cur"><a href="sublist.html"><i></i><span>Subordinate</span><b></b>
+    <li class="nav_site menu_cur"><a href="sublist.jsp"><i></i><span>Subordinate</span><b></b>
 
       <div class="clear"></div>
     </a></li>
@@ -87,9 +88,28 @@
   <div id="sort">
   </div>
   <div id="content">
-    Employee Name :
-    kapan: input type
-    type: dropdown list
+    <table>
+      <tr>
+        <th>Employee Name :</th>
+          <td><input type="text" name="name"></td>
+      </tr>
+      <tr>
+        <th>Date :</th>
+        <td><input id="date_timepicker_start" type="text" > to <input id="date_timepicker_end" type="text" ></td>
+      </tr>
+      <tr>
+        <th>Time :</th>
+        <td><input id="timepicker" type="text" > to <input id="timepicker1" type="text" ></td>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <td><select>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select></td>
+      </tr>
     </table>
   </div>
   <div class="push_msk"></div>
@@ -112,4 +132,56 @@
 <script language="javascript" src="js/script.js"></script>
 
 </body>
+<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/ >
+<script src="js/jquery.js"></script>
+<script src="js/jquery.datetimepicker.js"></script>
+<script>
+  jQuery('#datetimepicker1').datetimepicker({
+    lang:'de',
+    i18n:{
+      de:{
+        months:[
+          'Januar','Februar','März','April',
+          'Mai','Juni','Juli','August',
+          'September','Oktober','November','Dezember',
+        ],
+        dayOfWeek:[
+          "So.", "Mo", "Di", "Mi",
+          "Do", "Fr", "Sa.",
+        ]
+      }
+    },
+    timepicker:false,
+    format:'d.m.Y'
+  });
+  jQuery(function(){
+    jQuery('#date_timepicker_start').datetimepicker({
+      format:'Y/m/d',
+      onShow:function( ct ){
+        this.setOptions({
+          maxDate:jQuery('#date_timepicker_end').val()?jQuery('#date_timepicker_end').val():false
+        })
+      },
+      timepicker:false
+    });
+    jQuery('#date_timepicker_end').datetimepicker({
+      format:'Y/m/d',
+      onShow:function( ct ){
+        this.setOptions({
+          minDate:jQuery('#date_timepicker_start').val()?jQuery('#date_timepicker_start').val():false
+        })
+      },
+      timepicker:false
+    });
+  });
+
+  jQuery('#timepicker').datetimepicker({
+    datepicker:false,
+    format:'H:i'
+  });
+  jQuery('#timepicker1').datetimepicker({
+    datepicker:true,
+    format:'H:i'
+  });
+</script>
 </html>

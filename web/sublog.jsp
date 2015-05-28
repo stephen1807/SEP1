@@ -44,15 +44,15 @@
   <div class="search_wrap">
   </div>
   <ul>
-    <li class="nav_index"><a href="home.html"><i></i><span>Home</span><b></b>
+    <li class="nav_index"><a href="home.jsp"><i></i><span>Home</span><b></b>
 
       <div class="clear"></div>
     </a></li>
-    <li class="nav_site"><a href="profile.html"><i></i><span>Profile</span><b></b>
+    <li class="nav_site"><a href="profile.jsp"><i></i><span>Profile</span><b></b>
 
       <div class="clear"></div>
     </a></li>
-    <li class="nav_site menu_cur"><a href="sublist.html"><i></i><span>Subordinate</span><b></b>
+    <li class="nav_site menu_cur"><a href="sublist.jsp"><i></i><span>Subordinate</span><b></b>
 
       <div class="clear"></div>
     </a></li>
@@ -91,7 +91,7 @@
     <td>
       <button type="button">New</button>
     </td>
-    <table border="1" style="width:100%">
+    <table style="width:50%" class="table table-striped">
       <tr>
         <td>DateTimeime</td>
         <td>Type</td>
@@ -101,7 +101,6 @@
         <td>July</td>
         <td>15</td>
         <td>10</td>
-
       </tr>
     </table>
   </div>

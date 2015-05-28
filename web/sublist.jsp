@@ -4,6 +4,7 @@
   Date: 5/21/2015
   Time: 1:20 PM
   To change this template use File | Settings | File Templates.
+  v1.1 change the table css
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
@@ -24,6 +25,7 @@
   <meta name="description" content="优艺客 设计师网站">
   <meta name="author" content="优艺客"/>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
   <meta content="yes" name="apple-mobile-web-app-capable">
   <meta content="black" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
@@ -44,15 +46,15 @@
   <div class="search_wrap">
   </div>
   <ul>
-    <li class="nav_index"><a href="home.html"><i></i><span>Home</span><b></b>
+    <li class="nav_index"><a href="home.jsp"><i></i><span>Home</span><b></b>
 
       <div class="clear"></div>
     </a></li>
-    <li class="nav_site"><a href="profile.html"><i></i><span>Profile</span><b></b>
+    <li class="nav_site"><a href="profile.jsp"><i></i><span>Profile</span><b></b>
 
       <div class="clear"></div>
     </a></li>
-    <li class="nav_site menu_cur"><a href="sublist.html"><i></i><span>Subordinate</span><b></b>
+    <li class="nav_site menu_cur"><a href="sublist.jsp"><i></i><span>Subordinate</span><b></b>
 
       <div class="clear"></div>
     </a></li>
@@ -87,12 +89,20 @@
   <div id="sort">
   </div>
   <div id="content">
-    <table border="1" style="width:100%">
+    <table style="width:50%; margin-left:4cm;" class="table table-striped">
       <tr>
         <td>ID</td>
         <td>Name</td>
         <td>Department</td>
         <td>Details</td>
+      </tr>
+      <tr>
+        <td>12304010</td>
+        <td>Mario</td>
+        <td>Accounting</td>
+        <td>
+          <button type="button">View</button>
+        </td>
       </tr>
       <tr>
         <td>12304010</td>
