@@ -11,10 +11,7 @@ import proj.obj.Permission;
 import proj.obj.PermissionGlobal;
 import proj.obj.PermissionIndividual;
 
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Stephen on 2015/05/20.
@@ -23,11 +20,6 @@ import java.util.List;
 public class PermissionService {
 
     private static PermissionService instance = new PermissionService();
-
-    public static PermissionService getInstance() {
-        return instance;
-    }
-
     SessionFactory factory;
 
     private PermissionService() {
@@ -40,6 +32,10 @@ public class PermissionService {
         } catch (Throwable ex) {
             throw new ExceptionInInitializerError(ex);
         }
+    }
+
+    public static PermissionService getInstance() {
+        return instance;
     }
 
     public void insertPermission(Permission newP) {
@@ -64,19 +60,19 @@ public class PermissionService {
         }
     }
 
-    public List<PermissionIndividual> getPermissionIndividual(int employeeID, Date date) {
+    public List<PermissionIndividual> getPermissionIndividual(int employeeID, Date date, int logcode) {
 
         Session session = factory.openSession();
 
         Transaction tr = null;
 
-        List<PermissionIndividual> result = null;
+        List<PermissionIndividual> result = new ArrayList<>();
 
         try {
 
             tr = session.beginTransaction();
 
-            result = (List<PermissionIndividual>) session.createQuery("FROM PermissionIndividual WHERE employeeID = ? and ? between startTime and endTime").setParameter(0, employeeID).setParameter(1, date).list();
+            result = (List<PermissionIndividual>) session.createQuery("FROM PermissionIndividual WHERE employeeID = ? and logcode = ? and ? between startTime and endTime").setParameter(0, employeeID).setParameter(1, logcode).setParameter(2, date).list();
             tr.commit();
 
         } catch (HibernateException e) {
@@ -89,12 +85,12 @@ public class PermissionService {
         return result;
     }
 
-    public List<PermissionGlobal> getPermissionGlobal (Date time){
+    public List<PermissionGlobal> getPermissionGlobal(Date time, int logcode) {
         Session session = factory.openSession();
 
         Transaction tr = null;
 
-        List<PermissionGlobal> result = null;
+        List<PermissionGlobal> result = new ArrayList<>();
 
         try {
 
@@ -103,8 +99,8 @@ public class PermissionService {
             Calendar calendar = new GregorianCalendar();
             calendar.setTime(time);
 
-            result = (List<PermissionGlobal>) session.createQuery("FROM PermissionGlobal WHERE (? between startHour and endHour) OR (? = startHour and ? between startMinute and endMinute)")
-                    .setParameter(0, calendar.get(Calendar.HOUR_OF_DAY)).setParameter(1, calendar.get(Calendar.HOUR_OF_DAY)).setParameter(2, calendar.get(Calendar.MINUTE)).list();
+            result = (List<PermissionGlobal>) session.createQuery("FROM PermissionGlobal WHERE ((? between startHour and endHour) OR (? = startHour and ? between startMinute and endMinute)) AND logcode = ?")
+                    .setParameter(0, calendar.get(Calendar.HOUR_OF_DAY)).setParameter(1, calendar.get(Calendar.HOUR_OF_DAY)).setParameter(2, calendar.get(Calendar.MINUTE)).setParameter(3, logcode).list();
             tr.commit();
 
         } catch (HibernateException e) {

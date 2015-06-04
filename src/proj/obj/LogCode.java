@@ -1,12 +1,12 @@
 package proj.obj;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by Stephen on 2015/05/28.
  */
+@Entity
+@Table(name = "logcode")
 public class LogCode {
 
     private int logcode;
@@ -74,5 +74,33 @@ public class LogCode {
 
     public void setLogcost_permission(float logcost_permission) {
         this.logcost_permission = logcost_permission;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof LogCode)) return false;
+
+        LogCode logCode = (LogCode) o;
+
+        if (logcode != logCode.logcode) return false;
+        if (Float.compare(logCode.logcost, logcost) != 0) return false;
+        if (Float.compare(logCode.logcost_permission, logcost_permission) != 0) return false;
+        if (logname != null ? !logname.equals(logCode.logname) : logCode.logname != null) return false;
+        if (logdescription != null ? !logdescription.equals(logCode.logdescription) : logCode.logdescription != null)
+            return false;
+        return !(logunit != null ? !logunit.equals(logCode.logunit) : logCode.logunit != null);
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = logcode;
+        result = 31 * result + (logname != null ? logname.hashCode() : 0);
+        result = 31 * result + (logdescription != null ? logdescription.hashCode() : 0);
+        result = 31 * result + (logcost != +0.0f ? Float.floatToIntBits(logcost) : 0);
+        result = 31 * result + (logunit != null ? logunit.hashCode() : 0);
+        result = 31 * result + (logcost_permission != +0.0f ? Float.floatToIntBits(logcost_permission) : 0);
+        return result;
     }
 }
