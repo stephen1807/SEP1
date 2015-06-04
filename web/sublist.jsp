@@ -31,7 +31,11 @@
     <meta content="telephone=no" name="format-detection">
     <link rel="apple-touch-icon-precomposed" href="http://www.17sucai.com/static/images/favicon.ico">
     <script>
-        var logined = 0
+        function go() {
+            var newForm = document.getElementById("view");
+            newForm.action = "<%=basePath%>servlet/AddSalaryItemServlet";
+            newForm.submit();
+        }
     </script>
     <title>Attendance System</title>
 </head>
@@ -111,7 +115,7 @@
                 <td><%=e.getDepartmentID()%>
                 </td>
                 <td>
-                    <button type="button">View</button>
+                    <button type="button" id="view" onclick="goview()">View</button>
                 </td>
             </tr>
             <%

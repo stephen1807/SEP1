@@ -94,27 +94,27 @@
             %>
             <tr>
                 <td>ID</td>
-                <td><input =<%emp.getEmployeeID()%>"</td>
-      </tr>
-      <tr>
-        <td>Employee Name</td>
-        <td><input type=<%emp.getName()%>"</td>
+                <td><%emp.getEmployeeID()%>"</td>
+            </tr>
+            <tr>
+                <td>Employee Name</td>
+                <td><%emp.getName()%>"</td>
             </tr>
             <tr>
                 <td>Department ID</td>
-                <td><input type=<%emp.getDepartmentID()%>"</td>
-      </tr>
-      <tr>
-        <td>Gender</td>
-        <td><input type=<%emp.getGender()%>"</td>
+                <td><%emp.getDepartmentID()%>"</td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><%emp.getGender()%>"</td>
             </tr>
             <tr>
                 <td>DOB</td>
-                <td><input type=<%emp.getDOB()%>"</td>
-      </tr>
-      <tr>
-        <td>Phone</td>
-        <td><input type=<%emp.getPhone()%>"</td>
+                <td><%emp.getDOB()%>"</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><%emp.getPhone()%>"</td>
             </tr>
         </table>
     </div>

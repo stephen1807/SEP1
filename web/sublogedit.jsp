@@ -111,7 +111,7 @@
       </tr>
       <tr>
         <th></th>
-        <td align="right"><input type="button" value="Save" onclick="test();"/></td>
+        <td align="right"><input type="button" value="Save" onclick="dosave();"/></td>
       </tr>
     </table>
   </div>
@@ -170,8 +170,13 @@
     datepicker:false,
     format:'H:i'
   });
-  function test() {
-    alert("1");
+  function dosave() {
+    var id = document.getElementById("id").value;
+    var start_date = document.getElementById("date_timepicker_start").value;
+    var start_time = document.getElementById("timepicker").value;
+    var end_date = document.getElementById("date_timepicker_end").value;
+    var end_time = document.getElementById("timepicker1").value;
+    var type = document.getElementById("type").value;
   }
 </script>
 </html>
