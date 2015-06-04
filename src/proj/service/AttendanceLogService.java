@@ -17,11 +17,6 @@ import java.util.List;
  */
 public class AttendanceLogService {
     private static AttendanceLogService ourInstance = new AttendanceLogService();
-
-    public static AttendanceLogService getInstance() {
-        return ourInstance;
-    }
-
     SessionFactory factory;
 
     private AttendanceLogService() {
@@ -34,6 +29,10 @@ public class AttendanceLogService {
         } catch (Throwable ex) {
             throw new ExceptionInInitializerError(ex);
         }
+    }
+
+    public static AttendanceLogService getInstance() {
+        return ourInstance;
     }
 
     public void insertAttendanceLog(AttendanceLog newAL) {
@@ -59,7 +58,7 @@ public class AttendanceLogService {
 
     }
 
-    public List<AttendanceLog> getAttendanceLog(int employeeID){
+    public List<AttendanceLog> getAttendanceLog(int employeeID, int month) {
         Session session = factory.openSession();
 
         Transaction tr = null;
@@ -70,11 +69,11 @@ public class AttendanceLogService {
 
             tr = session.beginTransaction();
 
-            result = (List<AttendanceLog>) session.createQuery("FROM AttendanceLog where employeeid = ?").setParameter(0, employeeID).list();
+            result = (List<AttendanceLog>) session.createQuery("FROM AttendanceLog where employeeid = ? AND month(entrydate) = ?").setParameter(0, employeeID).setParameter(1, month).list();
 
             tr.commit();
 
-        } catch (HibernateException e){
+        } catch (HibernateException e) {
             if (tr != null) tr.rollback();
             e.printStackTrace();
         } finally {
