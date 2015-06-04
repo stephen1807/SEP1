@@ -46,15 +46,15 @@
     <div class="search_wrap">
     </div>
     <ul>
-        <li class="nav_index"><a href="home.html"><i></i><span>Home</span><b></b>
+        <li class="nav_index"><a href="home.jsp"><i></i><span>Home</span><b></b>
 
             <div class="clear"></div>
         </a></li>
-        <li class="nav_site"><a href="profile.html"><i></i><span>Profile</span><b></b>
+        <li class="nav_site"><a href="profile.jsp"><i></i><span>Profile</span><b></b>
 
             <div class="clear"></div>
         </a></li>
-        <li class="nav_site menu_cur"><a href="sublist.html"><i></i><span>Subordinate</span><b></b>
+        <li class="nav_site menu_cur"><a href="sublist.jsp"><i></i><span>Subordinate</span><b></b>
 
             <div class="clear"></div>
         </a></li>
@@ -71,7 +71,7 @@
     </div>
     <div class="pd10">
         <form>
-            <a class="login_submit" href="login.html">LOGOUT</a>
+            <a class="login_submit" href="login.jsp">LOGOUT</a>
         </form>
 
     </div>
@@ -95,7 +95,7 @@
         </td>
         <table border="1" style="width:100%; left: 200px;">
             <tr>
-                <td>DateTimeime</td>
+                <td>Date and Time</td>
                 <td>Type</td>
                 <td>Description</td>
             </tr>
