@@ -41,26 +41,26 @@
 <%if (session.getAttribute("userid") == null) { %>
 <body>
 <form id="myform">
-<div class="login">
-    <h2>Acced Form</h2>
+    <div class="login">
+        <h2>Acced Form</h2>
 
-    <div class="login-top">
-        <h1>LOGIN FORM</h1>
+        <div class="login-top">
+            <h1>LOGIN FORM</h1>
 
-        <form>
-            <input type="text" id="userid" value="User Id" onfocus="this.value = '';"
-                   onblur="if (this.value == '') {this.value = 'User Id';}">
-            <input type="password" id="password" value="password" onfocus="this.value = '';"
-                   onblur="if (this.value == '') {this.value = 'password';}">
-        </form>
-        <div class="forgot">
-            <input type="submit" value="Login" onclick="dologin()">
+            <form>
+                <input type="text" id="userid" value="User Id" onfocus="this.value = '';"
+                       onblur="if (this.value == '') {this.value = 'User Id';}">
+                <input type="password" id="password" value="password" onfocus="this.value = '';"
+                       onblur="if (this.value == '') {this.value = 'password';}">
+            </form>
+            <div class="forgot">
+                <input type="submit" value="Login" onclick="dologin()">
+            </div>
         </div>
     </div>
-</div>
-<div class="copyright">
-    <p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="">OUR TEAM</a></p>
-</div>
+    <div class="copyright">
+        <p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="">OUR TEAM</a></p>
+    </div>
 </form>
 </body>
 <%} else {%>
