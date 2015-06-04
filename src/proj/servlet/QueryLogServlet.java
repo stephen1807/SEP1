@@ -19,10 +19,11 @@ public class QueryLogServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         int employeeID = Integer.parseInt(request.getParameter("employeeID"));
+        int month = Integer.parseInt(request.getParameter("month"));
 
         AttendanceLogService service = AttendanceLogService.getInstance();
 
-        List<AttendanceLog> tempList = service.getAttendanceLog(employeeID);
+        List<AttendanceLog> tempList = service.getAttendanceLog(employeeID, month);
 
         request.setAttribute("attendanceList", tempList);
 

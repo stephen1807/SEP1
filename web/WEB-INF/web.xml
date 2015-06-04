@@ -3,4 +3,104 @@
          xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <servlet>
+        <servlet-name>AcitivityTrackingServlet</servlet-name>
+        <servlet-class>proj.servlet.AcitivityTrackingServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AddAttendanceLogServlet</servlet-name>
+        <servlet-class>proj.servlet.AddAttendanceLogServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AddPermissionServlet</servlet-name>
+        <servlet-class>proj.servlet.AddPermissionServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CalculateSalaryServlet</servlet-name>
+        <servlet-class>proj.servlet.CalculateSalaryServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>EmployeeProfileServlet</servlet-name>
+        <servlet-class>proj.servlet.EmployeeProfileServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>InactivityTrackingServlet</servlet-name>
+        <servlet-class>proj.servlet.InactivityTrackingServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ListSubordinateServlet</servlet-name>
+        <servlet-class>proj.servlet.ListSubordinateServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>proj.servlet.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>proj.servlet.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>QueryLogServlet</servlet-name>
+        <servlet-class>proj.servlet.QueryLogServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AcitivityTrackingServlet</servlet-name>
+        <url-pattern>/servlet/AcitivityTrackingServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddAttendanceLogServlet</servlet-name>
+        <url-pattern>/servlet/AddAttendanceLogServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddPermissionServlet</servlet-name>
+        <url-pattern>/servlet/AddPermissionServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CalculateSalaryServlet</servlet-name>
+        <url-pattern>/servlet/CalculateSalaryServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>EmployeeProfileServlet</servlet-name>
+        <url-pattern>/servlet/EmployeeProfileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>InactivityTrackingServlet</servlet-name>
+        <url-pattern>/servlet/InactivityTrackingServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ListSubordinateServlet</servlet-name>
+        <url-pattern>/servlet/ListSubordinateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/servlet/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/servlet/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>QueryLogServlet</servlet-name>
+        <url-pattern>/servlet/QueryLogServlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>

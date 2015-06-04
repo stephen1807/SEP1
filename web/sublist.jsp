@@ -1,3 +1,5 @@
+<%@ page import="proj.obj.Employee" %>
+<%@ page import="java.util.List" %>
 <%--
   Created by IntelliJ IDEA.
   User: Zo
@@ -52,9 +54,9 @@
     <div class="search_wrap"></div>
     <ul><li class="nav_index"><a href="home.jsp"><i></i><span>Home</span><b></b>
         <div class="clear"></div></a></li>
-        <li class="nav_site"><a href="profile.jsp"><i></i><span>Profile</span><b></b>
+        <li class="nav_site"><a href="<%=basePath%>servlet/EmployeeProfileServlet"><i></i><span>Profile</span><b></b>
             <div class="clear"></div></a></li>
-        <li class="nav_site menu_cur"><a href="sublist.jsp"><i></i><span>Subordinate</span><b></b>
+        <li class="nav_site menu_cur"><a href="<%=basePath%>servlet/ListSubordinateServlet"><i></i><span>Subordinate</span><b></b>
             <div class="clear"></div></a></li>
     </ul>
 
@@ -69,7 +71,7 @@
         </div>
     </div>
     <div class="pd10">
-        <form><a class="login_submit" href="login.html">LOGOUT</a></form>
+        <form><a class="login_submit" href="<%=basePath%>servlet/LogoutServlet">LOGOUT</a></form>
     </div>
 </div>
 
@@ -106,49 +108,19 @@
                 <th>Details</th>
             </tr>
             </tfoot>
+            <%
+                List<Employee> emp = (List) request.getAttribute("subordinateList");
+                for (int i = 0; i < emp.size(); i++) {
+                    Employee e = emp.get(i);
 
+            %>
             <tbody>
             <tr>
-                <td>1</td>
+                <td><%=e.getEmployeeID()%></td>
                 <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>50000</td>
-                <td>Edinburgh</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Garrett Winters</td>
-                <td>Accountant</td>
-                <td>53000</td>
-                <td>Tokyo</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Ashton Cox</td>
-                <td>Junior Technical Author</td>
-                <td>70000</td>
-                <td>San Francisco</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Cedric Kelly</td>
-                <td>Senior Javascript Developer</td>
-                <td>80000</td>
-                <td>Edinburgh</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Airi Satou</td>
-                <td>Accountant</td>
-                <td>90000</td>
-                <td>Tokyo</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Brielle Williamson</td>
-                <td>Integration Specialist</td>
-                <td>150000</td>
-                <td>New York</td>
+                <td><%=e.getName()%></td>
+                <td><%=e.getDepartmentID()%></td>
+                <td><button type="button">View</button></td>
             </tr>
             </tbody>
         </table>

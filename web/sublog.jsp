@@ -50,11 +50,11 @@
 
             <div class="clear"></div>
         </a></li>
-        <li class="nav_site"><a href="profile.jsp"><i></i><span>Profile</span><b></b>
+        <li class="nav_site"><a href="<%=basePath%>servlet/EmployeeProfileServlet"><i></i><span>Profile</span><b></b>
 
             <div class="clear"></div>
         </a></li>
-        <li class="nav_site menu_cur"><a href="sublist.jsp"><i></i><span>Subordinate</span><b></b>
+        <li class="nav_site menu_cur"><a href="<%=basePath%>servlet/ListSubordinateServlet"><i></i><span>Subordinate</span><b></b>
 
             <div class="clear"></div>
         </a></li>
@@ -71,7 +71,7 @@
     </div>
     <div class="pd10">
         <form>
-            <a class="login_submit" href="login.jsp">LOGOUT</a>
+            <a class="login_submit" href="<%=basePath%>servlet/LogoutServlet">LOGOUT</a>
         </form>
 
     </div>

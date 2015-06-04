@@ -9,16 +9,17 @@ import proj.service.EmployeeService;
  */
 public class EmployeeLogic {
 
-    public Employee employeeLogin(String username, String password){
+    public Employee employeeLogin(String username, String password) {
 
         EmployeeService es = EmployeeService.getInstance();
 
         Employee temp = es.getEmployee(username);
-
-        if (temp.getUserpass().equals(password)) {
-            return temp;
-        } else {
-            return null;
-        }
+        if (temp != null) {
+            if (temp.getUserpass().equals(password)) {
+                return temp;
+            } else {
+                return null;
+            }
+        } else return null;
     }
 }
