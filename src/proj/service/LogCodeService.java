@@ -9,6 +9,9 @@ import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 import proj.obj.LogCode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Stephen on 2015/05/28.
  */
@@ -31,6 +34,32 @@ public class LogCodeService {
 
     public static LogCodeService getInstance() {
         return instance;
+    }
+
+    public List<LogCode> getAllLogCodes() {
+
+        Session session = factory.openSession();
+
+        Transaction tr = null;
+
+        List<LogCode> result = new ArrayList<LogCode>();
+
+        try {
+
+            tr = session.beginTransaction();
+
+            result = session.createQuery("FROM LogCode").list();
+
+            tr.commit();
+
+        } catch (HibernateException e) {
+            if (tr != null) tr.rollback();
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+
+        return result;
     }
 
     public LogCode getLogCode(int logid) {
