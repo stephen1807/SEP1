@@ -100,6 +100,13 @@
 
       <div class="clear"></div>
     </a></li>
+    <%  Integer type = (Integer)session.getAttribute("type");
+      if (type == 1) {%>
+    <li class="nav_site"><a href="<%=basePath%>logcode.jsp"><i></i><span>Log Code</span><b></b>
+
+      <div class="clear"></div>
+    </a></li>
+    <%}%>
   </ul>
 </div>
 <div id="user">

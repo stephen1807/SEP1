@@ -39,7 +39,7 @@
     <div class="search_wrap">
     </div>
     <ul>
-        <li class="nav_index menu_cur"><a href="home.jsp"><i></i><span>Home</span><b></b>
+        <li class="nav_index"><a href="home.jsp"><i></i><span>Home</span><b></b>
 
             <div class="clear"></div>
         </a></li>
@@ -51,6 +51,13 @@
 
             <div class="clear"></div>
         </a></li>
+        <%  Integer type = (Integer)session.getAttribute("type");
+            if (type == 1) {%>
+        <li class="nav_site menu_cur"><a href="<%=basePath%>logcode.jsp"><i></i><span>Log Code</span><b></b>
+
+            <div class="clear"></div>
+        </a></li>
+        <%}%>
     </ul>
 </div>
 <div id="user">
@@ -82,16 +89,21 @@
     <div id="sort">
     </div>
     <div id="content">
+        <button type="submit" id="new">New Log</button>
         <table border="1" style="width:50%; left: 200px;">
             <tr>
+                <td>Log Id</td>
                 <td>Log Name</td>
-                <td></td>
+                <td>Log Unit</td>
                 <td>Description</td>
+                <td>Edit</td>
             </tr>
             <tr>
                 <td>isi</td>
                 <td>isi</td>
                 <td>isi</td>
+                <td>isi</td>
+                <td><button type="submit" id="edit">Edit</button></td>
             </tr>
         </table>
     </div>

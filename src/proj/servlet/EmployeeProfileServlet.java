@@ -73,14 +73,6 @@ public class EmployeeProfileServlet extends HttpServlet {
 
             Employee employee = service.getEmployee(employeeID);
 
-            SimpleDateFormat dobFormat = new SimpleDateFormat("dd-MM-yyyy");
-            String dob = dobFormat.format(employee.getDOB());
-            try {
-                dobFormat.applyPattern("dd-MM-yyyy");
-                employee.setDOB(dobFormat.parse(dob));
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
             request.setAttribute("employee", employee);
 
             request.getRequestDispatcher("/profile.jsp").forward(request, response);

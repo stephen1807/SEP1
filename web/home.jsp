@@ -1,3 +1,4 @@
+<%@ page import="java.util.Objects" %>
 <%--
   Created by IntelliJ IDEA.
   User: Zo
@@ -47,10 +48,18 @@
 
             <div class="clear"></div>
         </a></li>
-        <li class="nav_site"><a href="<%=basePath%>servlet/ListSubordinateServlet"><i></i><span>Subordinate</span><b></b>
+        <li class="nav_site"><a
+                href="<%=basePath%>servlet/ListSubordinateServlet"><i></i><span>Subordinate</span><b></b>
 
             <div class="clear"></div>
         </a></li>
+        <%  Integer type = (Integer)session.getAttribute("type");
+            if (type == 1) {%>
+        <li class="nav_site"><a href="<%=basePath%>logcode.jsp"><i></i><span>Log Code</span><b></b>
+
+            <div class="clear"></div>
+        </a></li>
+            <%}%>
     </ul>
 </div>
 <div id="user">
@@ -82,7 +91,8 @@
     <div id="sort">
     </div>
     <div id="content">
-      Hello,  <%=session.getAttribute("userid") %>, <%=session.getAttribute("name") %>
+        Hello,  <%=session.getAttribute("userid") %>, <%=session.getAttribute("name") %>
+        , <%=session.getAttribute("type")%>
     </div>
 </div>
 

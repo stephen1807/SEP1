@@ -62,10 +62,12 @@ public class LoginServlet extends HttpServlet {
             if (employee.getEmployeetype() == 1) {
                 session.setAttribute("userid", employee.getEmployeeID());
                 session.setAttribute("name", employee.getName());
+                session.setAttribute("type", employee.getEmployeetype());
                 request.getRequestDispatcher("/home.jsp").forward(request, response);
             } else {
                 session.setAttribute("userid", employee.getEmployeeID());
                 session.setAttribute("name", employee.getName());
+                session.setAttribute("type", employee.getEmployeetype());
                 request.getRequestDispatcher("/home.jsp").forward(request, response);
             }
         }

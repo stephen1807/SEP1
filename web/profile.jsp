@@ -65,6 +65,13 @@
 
             <div class="clear"></div>
         </a></li>
+        <%  Integer type = (Integer)session.getAttribute("type");
+            if (type == 1) {%>
+        <li class="nav_site"><a href="<%=basePath%>logcode.jsp"><i></i><span>Log Code</span><b></b>
+
+            <div class="clear"></div>
+        </a></li>
+        <%}%>
     </ul>
 </div>
 <div id="user">
@@ -99,7 +106,9 @@
         <table border="1" style="width:50%; left: 200px;">
             <%
                 Employee emp = (Employee) request.getAttribute("employee");
+                java.text.DateFormat df=new java.text.SimpleDateFormat("dd/MM/yyyy");
             %>
+
             <tr>
                 <td>ID</td>
                 <td><%=emp.getEmployeeID()%></td>
@@ -118,7 +127,7 @@
             </tr>
             <tr>
                 <td>DOB</td>
-                <td><%=emp.getDOB()%></td>
+                <td><%=df.format(emp.getDOB())%></td>
             </tr>
             <tr>
                 <td>Phone</td>

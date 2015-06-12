@@ -101,8 +101,10 @@
          <tr>
              <th align="right">Unit :</th>
              <td> <select id="unit">
-                 <option value="day">Day</option>
+                 <option value="once">Once</option>
                  <option value="hour">Hour</option>
+                 <option value="day">Day</option>
+
              </select></td>
          </tr>
          <tr>
@@ -113,8 +115,8 @@
              </select></td>
          </tr>
          <tr>
-             <th></th>
-             <td align="right"><input type="button" value="Save" /></td>
+         <th></th>
+         <td align="right"><input type="button" value="Save" onclick="dosave();"/></td>
          </tr>
      </table>
     </div>
