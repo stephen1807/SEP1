@@ -16,6 +16,15 @@ public class AttendanceLog {
     private Date entrydate;
     private int logcode;
 
+    public AttendanceLog() {
+    }
+
+    public AttendanceLog(int employeeid, Date entrydate, int logcode) {
+        this.employeeid = employeeid;
+        this.entrydate = entrydate;
+        this.logcode = logcode;
+    }
+
     @Id
     @GeneratedValue
     @Column(name = "logid")
