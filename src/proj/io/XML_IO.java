@@ -45,11 +45,16 @@ public class XML_IO {
 
             Element rootEle = dom.getDocumentElement();
 
-            // create data elements and place them under root
-            e = dom.createElement(settingName);
-            e.appendChild(dom.createTextNode(settingContent));
-            rootEle.appendChild(e);
+            Node node = rootEle.getElementsByTagName(settingName).item(0);
+            if (node != null) {
+                node.getFirstChild().setNodeValue(settingContent);
+            } else {
 
+                // create data elements and place them under root
+                e = dom.createElement(settingName);
+                e.appendChild(dom.createTextNode(settingContent));
+                rootEle.appendChild(e);
+            }
             try {
                 Transformer tr = TransformerFactory.newInstance().newTransformer();
                 tr.setOutputProperty(OutputKeys.INDENT, "yes");
@@ -125,47 +130,6 @@ public class XML_IO {
             Node node = doc.getElementsByTagName(settingName).item(0);
 
             doc.removeChild(node);
-
-            try {
-                Transformer tr = TransformerFactory.newInstance().newTransformer();
-                tr.setOutputProperty(OutputKeys.INDENT, "yes");
-                tr.setOutputProperty(OutputKeys.METHOD, "xml");
-                tr.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-                tr.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
-
-                // send DOM to file
-                tr.transform(new DOMSource(dom),
-                        new StreamResult(new FileOutputStream(filePath)));
-
-            } catch (TransformerException te) {
-                System.out.println(te.getMessage());
-            } catch (IOException ioe) {
-                System.out.println(ioe.getMessage());
-            }
-        } catch (ParserConfigurationException pce) {
-            System.out.println("UsersXML: Error trying to instantiate DocumentBuilder " + pce);
-        } catch (SAXException e1) {
-            e1.printStackTrace();
-        } catch (IOException e2) {
-            e2.printStackTrace();
-        }
-    }
-
-    public void editSetting(String settingName, String newContent) {
-        Document dom;
-        Element e = null;
-
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        try {
-            // use factory to get an instance of document builder
-            DocumentBuilder db = dbf.newDocumentBuilder();
-
-            dom = db.parse(new File(filePath));
-
-            Element rootEle = dom.getDocumentElement();
-
-            Node node = rootEle.getElementsByTagName(settingName).item(0);
-            node.getFirstChild().setNodeValue(newContent);
 
             try {
                 Transformer tr = TransformerFactory.newInstance().newTransformer();
