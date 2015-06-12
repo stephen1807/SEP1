@@ -72,7 +72,7 @@ public class EmployeeService {
 
             tr = session.beginTransaction();
 
-            result = (Employee) session.createQuery("FROM Employee where username = ?").setParameter(0, username).uniqueResult();
+            result = (Employee) session.createQuery("FROM Employee where username = ?").setParameter(0, username).list().get(0);
 
             tr.commit();
 

@@ -16,8 +16,9 @@
 <html>
 <head>
     <title>Login</title>
+    <base href="<=%basePath%>">
     <!-- Custom Theme files -->
-    <link href="css/stylelogin.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/css/stylelogin.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Custom Theme files -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -25,26 +26,26 @@
     <meta name="keywords"
           content="Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
     <!--Google Fonts-->
-    <link href='css/loginfont1.css' rel='stylesheet' type='text/css'>
-    <link href='css/loginfont2.css' rel='stylesheet' type='text/css'>
+    <link href='/css/loginfont1.css' rel='stylesheet' type='text/css'>
+    <link href='/css/loginfont2.css' rel='stylesheet' type='text/css'>
     <!--Google Fonts-->
 </head>
-<script>
+<script type="text/javascript">
     function dologin() {
         var loginusername = document.getElementById("userid").value;
         var loginpassword = document.getElementById("password").value;
         myform.loginusername.value=loginusername;
         myform.loginpassword.value=loginpassword;
-        myform.action = "<%=basePath%>servlet/LoginServlet";
+        myform.action = "/servlet/LoginServlet";
         myform.submit();
     }
 </script>
 <%if (session.getAttribute("userid") == null) { %>
 <body>
-<form id="myform">
+<form id="myform" style="display: none;">
     <input type="hidden" name="loginusername">
     <input type="hidden" name="loginpassword">
-    </form>
+</form>
     <div class="login">
         <h2>Acced Form</h2>
 
@@ -70,4 +71,3 @@
 <jsp:forward page="home.jsp"></jsp:forward>
 <%} %>
 </html>
-//date format YYYY-MM-DD

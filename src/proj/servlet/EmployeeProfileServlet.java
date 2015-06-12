@@ -7,6 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
@@ -58,14 +59,21 @@ public class EmployeeProfileServlet extends HttpServlet {
             throws ServletException, IOException {
 
         EmployeeService service = EmployeeService.getInstance();
+        HttpSession session = request.getSession();
 
-        String employeeID = request.getParameter("employeeID");
+        if(session.getAttribute("userid")==null)
+        {
+            request.getRequestDispatcher("/login.jsp").forward(request,response);
+        }
+        else{
+            int employeeID = (int)session.getAttribute("userid");
 
-        Employee employee = service.getEmployee(Integer.parseInt(employeeID));
+            Employee employee = service.getEmployee(employeeID);
 
-        request.setAttribute("employee", employee);
+            request.setAttribute("employee", employee);
 
-        request.getRequestDispatcher("/profile.jsp").forward(request, response);
+            request.getRequestDispatcher("/profile.jsp").forward(request, response);
+        }
     }
 
     /**

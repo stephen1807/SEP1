@@ -24,7 +24,7 @@ public class AddPermissionServlet extends HttpServlet {
         Date endTime = null;
         String startTimeStr = request.getParameter("startTime");
         //TODO
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-hh-mm");
         try {
             startTime = sdf.parse(startTimeStr);
         } catch (Exception e) {
@@ -45,6 +45,7 @@ public class AddPermissionServlet extends HttpServlet {
 
         PermissionService ps = PermissionService.getInstance();
         ps.insertPermission(permission);
+        request.setAttribute("employeeID", employeeID);
         request.getRequestDispatcher("/sublogedit.jsp").forward(request, response);
     }
 

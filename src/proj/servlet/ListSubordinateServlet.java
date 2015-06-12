@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
@@ -18,15 +19,19 @@ import java.util.List;
 public class ListSubordinateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        int employeeID = Integer.parseInt(request.getParameter("employeeID"));
+        HttpSession session = request.getSession();
 
-        RelationLogic rl = new RelationLogic();
-        List<Employee> subordinateList = rl.getAllSubordinates(employeeID);
+        if (session.getAttribute("userid") == null) {
+            request.getRequestDispatcher("/login.jsp").forward(request, response);
+        } else {
+            int employeeID = (int) session.getAttribute("userid");
+            RelationLogic rl = new RelationLogic();
+            List<Employee> subordinateList = rl.getAllSubordinates(employeeID);
 
-        request.setAttribute("subordinateList", subordinateList);
+            request.setAttribute("subordinateList", subordinateList);
 
-        request.getRequestDispatcher("/sublist.jsp").forward(request, response);
-
+            request.getRequestDispatcher("/sublist.jsp").forward(request, response);
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

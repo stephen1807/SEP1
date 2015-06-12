@@ -31,13 +31,10 @@
     </script>
     <title>Attendance System</title>
 </head>
-
+<%if (session.getAttribute("userid") == null) { %>
+<jsp:forward page="index.jsp"></jsp:forward>
+<%} else {%>
 <body>
-<script>
-    var now_page = 1,
-            search_value = '';
-</script>
-
 <div id="menu">
     <div class="search_wrap">
     </div>
@@ -46,7 +43,7 @@
 
             <div class="clear"></div>
         </a></li>
-        <li class="nav_site"><a href="<%=basePath%>servlet/EmployeeProfileServlet"><i></i><span>Profile</span><b></b>
+        <li class="nav_site"><a href="servlet/EmployeeProfileServlet"><i></i><span>Profile</span><b></b>
 
             <div class="clear"></div>
         </a></li>
@@ -85,27 +82,14 @@
     <div id="sort">
     </div>
     <div id="content">
-
-    </div>
-
-    <div class="push_msk"></div>
-</div>
-
-<div class="loading_dark"></div>
-<div id="loading_mask">
-    <div class="loading_mask">
-        <ul class="anm">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+      Hello,  <%=session.getAttribute("userid") %>, <%=session.getAttribute("name") %>
     </div>
 </div>
+
 <script language="javascript" src="js/zepto.min.js"></script>
 <script language="javascript" src="js/fx.js"></script>
 <script language="javascript" src="js/script.js"></script>
 
 </body>
+<%} %>
 </html>

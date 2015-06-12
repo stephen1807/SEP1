@@ -1,5 +1,7 @@
 <%@ page import="proj.obj.AttendanceLog" %>
 <%@ page import="java.util.List" %>
+<%@ page import="proj.obj.Employee" %>
+<%@ page import="proj.service.EmployeeService" %>
 <%--
   Created by IntelliJ IDEA.
   User: Zo
@@ -18,6 +20,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" class="loading">
 <head>
+    <base href="<%=basePath%>">
+    <base src="<%=basePath%>">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
     <meta name="viewport"
@@ -25,23 +29,29 @@
     <meta name="keywords" content="CSS酷站收录站 uehtml 网页设计 DIV+CSS Javascript 酷站 酷站收录 网站设计 网页设计 CSS3"/>
     <meta name="description" content="优艺客 设计师网站">
     <meta name="author" content="优艺客"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
     <link rel="apple-touch-icon-precomposed" href="http://www.17sucai.com/static/images/favicon.ico">
-    <script>
-        var logined = 0
-    </script>
     <title>Attendance System</title>
 </head>
 
-<body>
-<script>
-    var now_page = 1,
-            search_value = '';
+<script type="text/javascript">
+    function doAdd(employeeID) {
+        var idForm = document.getElementById("idForm");
+        idForm.employeeID.value=employeeID;
+        idForm.action = "/servlet/AddPermissionServlet";
+        idForm.submit();
+    }
 </script>
-
+<%if (session.getAttribute("userid") == null) { %>
+<jsp:forward page="index.jsp"></jsp:forward>
+<%} else {%>
+<body>
+<form id="idForm" method="get">
+    <input type="hidden" name="employeeID">
+</form>
 <div id="menu">
     <div class="search_wrap">
     </div>
@@ -89,9 +99,11 @@
     <div id="sort">
     </div>
     <div id="content">
-        Employee Name :
+        Employee Name : <%=request.getAttribute("employeeName")%>
+
+
         <td>
-            <button type="button">New</button>
+            <input type="button" value ="Add Permission" onclick="doAdd(<%=request.getAttribute("employeeID")%>)"/>
         </td>
         <table border="1" style="width:100%; left: 200px;">
             <tr>
@@ -106,30 +118,17 @@
 
             %>
             <tr>
+
                 <td><%=al.getEntrydate()%>
                 </td>
                 <td><%=al.getLogcode()%>
                 </td>
                 <td>Description</td>
             </tr>
-            <%=
+            <%
             }
             %>
         </table>
-    </div>
-    <div class="push_msk"></div>
-</div>
-
-<div class="loading_dark"></div>
-<div id="loading_mask">
-    <div class="loading_mask">
-        <ul class="anm">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
     </div>
 </div>
 <script language="javascript" src="js/zepto.min.js"></script>
@@ -137,4 +136,5 @@
 <script language="javascript" src="js/script.js"></script>
 
 </body>
+<%} %>
 </html>

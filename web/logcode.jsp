@@ -1,20 +1,16 @@
-<%@ page import="proj.obj.Employee" %>
 <%--
   Created by IntelliJ IDEA.
   User: Zo
   Date: 5/21/2015
-  Time: 1:19 PM
+  Time: 10:58 AM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String path = request.getContextPath();
-    String basePath = request.getScheme() + "://"
-            + request.getServerName() + ":" + request.getServerPort()
-            + path + "/";
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" class="loading">
 <head>
     <base href="<%=basePath%>">
@@ -38,26 +34,16 @@
 <%if (session.getAttribute("userid") == null) { %>
 <jsp:forward page="index.jsp"></jsp:forward>
 <%} else {%>
-<script type="text/javascript">
-    function doview() {
-        var loginusername = document.getElementById("userid").value;
-        var loginpassword = document.getElementById("password").value;
-        myform.loginusername.value=loginusername;
-        myform.loginpassword.value=loginpassword;
-        myform.action = "/servlet/LoginServlet";
-        myform.submit();
-    }
-</script>
 <body>
 <div id="menu">
     <div class="search_wrap">
     </div>
     <ul>
-        <li class="nav_index"><a href="/home.jsp"><i></i><span>Home</span><b></b>
+        <li class="nav_index menu_cur"><a href="home.jsp"><i></i><span>Home</span><b></b>
 
             <div class="clear"></div>
         </a></li>
-        <li class="nav_site menu_cur"><a href="<%=basePath%>servlet/EmployeeProfileServlet"><i></i><span>Profile</span><b></b>
+        <li class="nav_site"><a href="servlet/EmployeeProfileServlet"><i></i><span>Profile</span><b></b>
 
             <div class="clear"></div>
         </a></li>
@@ -87,7 +73,7 @@
     <div class="wrap">
         <i class="menu_open"></i>
 
-        <div class="logo"><a title="uthml酷站大全"><img src="css/logo.png"/></a></div>
+        <div class="logo"><a href="http://www.17sucai.com/" title="uthml酷站大全"><img src="css/logo.png"/></a></div>
         <i class="search_open"></i>
     </div>
     <div class="logo_msk"></div>
@@ -97,41 +83,24 @@
     </div>
     <div id="content">
         <table border="1" style="width:50%; left: 200px;">
-            <%
-                Employee emp = (Employee) request.getAttribute("employee");
-            %>
             <tr>
-                <td>ID</td>
-                <td><%=emp.getEmployeeID()%></td>
+                <td>Log Name</td>
+                <td></td>
+                <td>Description</td>
             </tr>
             <tr>
-                <td>Employee Name</td>
-                <td><%=emp.getName()%></td>
-            </tr>
-            <tr>
-                <td>Department ID</td>
-                <td><%=emp.getDepartmentID()%></td>
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td><%=emp.getGender()%></td>
-            </tr>
-            <tr>
-                <td>DOB</td>
-                <td><%=emp.getDOB()%></td>
-            </tr>
-            <tr>
-                <td>Phone</td>
-                <td><%=emp.getPhone()%></td>
+                <td>isi</td>
+                <td>isi</td>
+                <td>isi</td>
             </tr>
         </table>
     </div>
-    <div class="push_msk"></div>
 </div>
 
 <script language="javascript" src="js/zepto.min.js"></script>
 <script language="javascript" src="js/fx.js"></script>
 <script language="javascript" src="js/script.js"></script>
+
 </body>
 <%} %>
 </html>

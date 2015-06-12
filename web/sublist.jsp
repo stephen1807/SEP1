@@ -19,6 +19,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" class="loading">
 <head>
+    <base href="<%=basePath%>">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
     <meta name="viewport"
@@ -31,24 +32,31 @@
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
     <link rel="apple-touch-icon-precomposed" href="http://www.17sucai.com/static/images/favicon.ico">
-
-    <script>
-        var logined = 0
-    </script>
-
-    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="/js/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/table-Animation.css">
-    <script src="js/jquery.dataTables.min.js"></script>
-    <script src="js/demo.js"></script>
+    <script src="/js/jquery.dataTables.min.js"></script>
+    <script src="/js/demo.js"></script>
 
     <title>Attendance System</title>
 </head>
-
-<body>
-<script>
-    var now_page = 1,
-            search_value = '';
+<%if (session.getAttribute("userid") == null) { %>
+<jsp:forward page="index.jsp"></jsp:forward>
+<%} else {%>
+<script type="text/javascript">
+    function doView(subordinateID) {
+        var month = document.getElementById("month").value;
+        var idForm= document.getElementById("idForm");
+        idForm.subordinateID.value=subordinateID;
+        idForm.month.value=month;
+        idForm.action = "/servlet/QueryLogServlet";
+        idForm.submit();
+    }
 </script>
+<body>
+<form id="idForm" method="get">
+    <input type="hidden" name="subordinateID"/>
+    <input type="hidden" name="month"/>
+</form>
 
 <div id="menu">
     <div class="search_wrap"></div>
@@ -88,6 +96,20 @@
 <div id="container">
     <div id="sort"></div>
     <div id="content">
+        <select id="month">
+            <option value="01">January</option>
+            <option value="02">Febuary</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">Augustus</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
         <table id="example" class="display" cellspacing="0" width="50%">
             <thead>
             <tr>
@@ -112,35 +134,19 @@
                 List<Employee> emp = (List) request.getAttribute("subordinateList");
                 for (int i = 0; i < emp.size(); i++) {
                     Employee e = emp.get(i);
-
             %>
             <tbody>
             <tr>
                 <td><%=e.getEmployeeID()%></td>
-                <td>Tiger Nixon</td>
                 <td><%=e.getName()%></td>
                 <td><%=e.getDepartmentID()%></td>
-                <td><button type="button">View</button></td>
+                <td><input type="button" value="View" onclick="doView(<%=e.getEmployeeID()%>)"/></td>
             </tr>
             </tbody>
+            <%
+                }
+            %>
         </table>
-    </div>
-    <div class="push_msk"></div>
-</div>
-<div class="clear"></div>
-
-
-
-<div class="loading_dark"></div>
-<div id="loading_mask">
-    <div class="loading_mask">
-        <ul class="anm">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
     </div>
 </div>
 <script language="javascript" src="js/zepto.min.js"></script>
@@ -148,4 +154,5 @@
 <script language="javascript" src="js/script.js"></script>
 
 </body>
+<%} %>
 </html>
