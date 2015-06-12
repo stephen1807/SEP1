@@ -32,6 +32,7 @@ public class XML_IO {
         filePath = path;
     }
 
+    //For both insert & update
     public void writeSetting(String settingName, String settingContent) {
         Document dom;
         Element e = null;
