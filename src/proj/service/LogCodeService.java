@@ -87,4 +87,25 @@ public class LogCodeService {
 
         return result;
     }
+
+    public void editLogCode(LogCode newLC) {
+        Session session = factory.openSession();
+
+        Transaction tr = null;
+
+        try {
+
+            tr = session.beginTransaction();
+
+            session.update(newLC);
+
+            tr.commit();
+
+        } catch (HibernateException e) {
+            if (tr != null) tr.rollback();
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+    }
 }
