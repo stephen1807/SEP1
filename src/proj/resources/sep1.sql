@@ -88,6 +88,7 @@ CREATE TABLE `logcode` (
   `logcost` float NOT NULL,
   `logunit` varchar(7) NOT NULL,
   `logcost_permission` float NOT NULL,
+  `available` TINYINT(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`logcode`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
