@@ -15,6 +15,7 @@ public class LogCode {
     private float logcost;
     private String logunit;
     private float logcost_permission;
+    private boolean available;
 
     @Id
     @Column(name = "logcode")
@@ -76,6 +77,16 @@ public class LogCode {
         this.logcost_permission = logcost_permission;
     }
 
+    @Basic
+    @Column(name = "available")
+    public boolean isAvailable() {
+        return available;
+    }
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -86,6 +97,7 @@ public class LogCode {
         if (logcode != logCode.logcode) return false;
         if (Float.compare(logCode.logcost, logcost) != 0) return false;
         if (Float.compare(logCode.logcost_permission, logcost_permission) != 0) return false;
+        if (available != logCode.available) return false;
         if (logname != null ? !logname.equals(logCode.logname) : logCode.logname != null) return false;
         if (logdescription != null ? !logdescription.equals(logCode.logdescription) : logCode.logdescription != null)
             return false;
@@ -101,6 +113,7 @@ public class LogCode {
         result = 31 * result + (logcost != +0.0f ? Float.floatToIntBits(logcost) : 0);
         result = 31 * result + (logunit != null ? logunit.hashCode() : 0);
         result = 31 * result + (logcost_permission != +0.0f ? Float.floatToIntBits(logcost_permission) : 0);
+        result = 31 * result + (available ? 1 : 0);
         return result;
     }
 }
