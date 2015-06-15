@@ -114,12 +114,22 @@ public class SettingsLogic {
         settingService.writeSetting(new Setting("InactivityLogCode", String.valueOf(logcode)));
     }
 
-    public void setOverworkCode(int logcode) {
+    public void getOverworkStartCode(int logcode) {
         SettingService settingService = SettingService.getInstance();
         settingService.writeSetting(new Setting("OverworkCode", String.valueOf(logcode)));
     }
 
-    public int getOverworkCode(int logcode) {
+    public int getOverworkStartCode() {
+        SettingService settingService = SettingService.getInstance();
+        return Integer.parseInt(settingService.readSetting("OverworkCode"));
+    }
+
+    public void getOverworkEndCode(int logcode) {
+        SettingService settingService = SettingService.getInstance();
+        settingService.writeSetting(new Setting("OverworkCode", String.valueOf(logcode)));
+    }
+
+    public int getOverworkEndCode() {
         SettingService settingService = SettingService.getInstance();
         return Integer.parseInt(settingService.readSetting("OverworkCode"));
     }
