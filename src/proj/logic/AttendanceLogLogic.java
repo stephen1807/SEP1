@@ -1,5 +1,8 @@
 package proj.logic;
 
+import proj.obj.AttendanceLog;
+import proj.service.AttendanceLogService;
+
 import java.util.Date;
 
 /**
@@ -9,11 +12,12 @@ public class AttendanceLogLogic {
 
     public void userSetInactive(int employeeID, Date entryDate) {
 
+        SettingsLogic sl = new SettingsLogic();
+        int logcode = sl.getInactivityCode();
 
-    }
+        AttendanceLog attendanceLog = new AttendanceLog(employeeID, entryDate, logcode);
 
-    public void userSetActive(int employeeID, Date entryDate) {
-
-
+        AttendanceLogService als = AttendanceLogService.getInstance();
+        als.insertAttendanceLog(attendanceLog);
     }
 }
