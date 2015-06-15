@@ -108,4 +108,25 @@ public class LogCodeService {
             session.close();
         }
     }
+
+    public void insertLogCode(LogCode newLC) {
+        Session session = factory.openSession();
+
+        Transaction tr = null;
+
+        try {
+
+            tr = session.beginTransaction();
+
+            session.save(newLC);
+
+            tr.commit();
+
+        } catch (HibernateException e) {
+            if (tr != null) tr.rollback();
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+    }
 }
