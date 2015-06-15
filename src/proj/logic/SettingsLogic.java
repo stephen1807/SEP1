@@ -1,6 +1,7 @@
 package proj.logic;
 
-import proj.io.XML_IO;
+import proj.obj.Setting;
+import proj.service.SettingService;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -12,11 +13,11 @@ import java.util.Date;
 public class SettingsLogic {
 
     public Date getWorkStartTime() {
-        XML_IO xml_io = new XML_IO();
+        SettingService settingService = SettingService.getInstance();
         Date result = null;
         SimpleDateFormat sdf = new SimpleDateFormat("HHmm");
         try {
-            result = sdf.parse(xml_io.readSetting("WorkStartTime"));
+            result = sdf.parse(settingService.readSetting("WorkStartTime"));
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -24,17 +25,17 @@ public class SettingsLogic {
     }
 
     public void setWorkStartTime(Date time) {
-        XML_IO xml_io = new XML_IO();
+        SettingService settingService = SettingService.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("HHmm");
-        xml_io.writeSetting("WorkStartTime", sdf.format(time));
+        settingService.writeSetting(new Setting("WorkStartTime", sdf.format(time)));
     }
 
     public Date getWorkFinishTime() {
-        XML_IO xml_io = new XML_IO();
+        SettingService settingService = SettingService.getInstance();
         Date result = null;
         SimpleDateFormat sdf = new SimpleDateFormat("HHmm");
         try {
-            result = sdf.parse(xml_io.readSetting("WorkFinishTime"));
+            result = sdf.parse(settingService.readSetting("WorkFinishTime"));
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -42,17 +43,17 @@ public class SettingsLogic {
     }
 
     public void setWorkFinishTime(Date time) {
-        XML_IO xml_io = new XML_IO();
+        SettingService settingService = SettingService.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("HHmm");
-        xml_io.writeSetting("WorkFinishTime", sdf.format(time));
+        settingService.writeSetting(new Setting("WorkFinishTime", sdf.format(time)));
     }
 
     public Date getOverworkStartTime() {
-        XML_IO xml_io = new XML_IO();
+        SettingService settingService = SettingService.getInstance();
         Date result = null;
         SimpleDateFormat sdf = new SimpleDateFormat("HHmm");
         try {
-            result = sdf.parse(xml_io.readSetting("OverworkStartTime"));
+            result = sdf.parse(settingService.readSetting("OverworkStartTime"));
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -60,17 +61,17 @@ public class SettingsLogic {
     }
 
     public void setOverworkStartTime(Date time) {
-        XML_IO xml_io = new XML_IO();
+        SettingService settingService = SettingService.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("HHmm");
-        xml_io.writeSetting("OverworkStartTime", sdf.format(time));
+        settingService.writeSetting(new Setting("OverworkStartTime", sdf.format(time)));
     }
 
     public Date getOverworkFinishTime() {
-        XML_IO xml_io = new XML_IO();
+        SettingService settingService = SettingService.getInstance();
         Date result = null;
         SimpleDateFormat sdf = new SimpleDateFormat("HHmm");
         try {
-            result = sdf.parse(xml_io.readSetting("OverworkFinishTime"));
+            result = sdf.parse(settingService.readSetting("OverworkFinishTime"));
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -78,48 +79,48 @@ public class SettingsLogic {
     }
 
     public void setOverworkFinishTime(Date time) {
-        XML_IO xml_io = new XML_IO();
+        SettingService settingService = SettingService.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("HHmm");
-        xml_io.writeSetting("OverworkFinishTime", sdf.format(time));
+        settingService.writeSetting(new Setting("OverworkFinishTime", sdf.format(time)));
     }
 
     public int getLoginCode() {
-        XML_IO xml_io = new XML_IO();
-        return Integer.parseInt(xml_io.readSetting("LoginCode"));
+        SettingService settingService = SettingService.getInstance();
+        return Integer.parseInt(settingService.readSetting("LoginCode"));
     }
 
     public void setLoginCode(int logcode) {
-        XML_IO xml_io = new XML_IO();
-        xml_io.writeSetting("LoginCode", String.valueOf(logcode));
+        SettingService settingService = SettingService.getInstance();
+        settingService.writeSetting(new Setting("LoginCode", String.valueOf(logcode)));
     }
 
     public int getLogoutCode() {
-        XML_IO xml_io = new XML_IO();
-        return Integer.parseInt(xml_io.readSetting("LogoutCode"));
+        SettingService settingService = SettingService.getInstance();
+        return Integer.parseInt(settingService.readSetting("LogoutCode"));
     }
 
     public void setLogoutCode(int logcode) {
-        XML_IO xml_io = new XML_IO();
-        xml_io.writeSetting("LogoutCode", String.valueOf(logcode));
+        SettingService settingService = SettingService.getInstance();
+        settingService.writeSetting(new Setting("LogoutCode", String.valueOf(logcode)));
     }
 
     public int getInactivityCode() {
-        XML_IO xml_io = new XML_IO();
-        return Integer.parseInt(xml_io.readSetting("InactivityLogCode"));
+        SettingService settingService = SettingService.getInstance();
+        return Integer.parseInt(settingService.readSetting("InactivityLogCode"));
     }
 
     public void setInactivityCode(int logcode) {
-        XML_IO xml_io = new XML_IO();
-        xml_io.writeSetting("InactivityLogCode", String.valueOf(logcode));
+        SettingService settingService = SettingService.getInstance();
+        settingService.writeSetting(new Setting("InactivityLogCode", String.valueOf(logcode)));
     }
 
     public void setOverworkCode(int logcode) {
-        XML_IO xml_io = new XML_IO();
-        xml_io.writeSetting("OverworkCode", String.valueOf(logcode));
+        SettingService settingService = SettingService.getInstance();
+        settingService.writeSetting(new Setting("OverworkCode", String.valueOf(logcode)));
     }
 
     public int getOverworkCode(int logcode) {
-        XML_IO xml_io = new XML_IO();
-        return Integer.parseInt(xml_io.readSetting("OverworkCode"));
+        SettingService settingService = SettingService.getInstance();
+        return Integer.parseInt(settingService.readSetting("OverworkCode"));
     }
 }

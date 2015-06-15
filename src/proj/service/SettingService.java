@@ -7,18 +7,17 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
-import proj.obj.Employee;
+import proj.obj.Setting;
 
 /**
- * Created by Stephen on 2015/05/20.
- * Ver 1.1
+ * Created by Stephen on 2015/06/15.
  */
-public class EmployeeService {
+public class SettingService {
 
-    private static EmployeeService instance = new EmployeeService();
+    private static SettingService ourInstance = new SettingService();
     SessionFactory factory;
 
-    private EmployeeService() {
+    private SettingService() {
         try {
             Configuration configuration = new Configuration();
             configuration.configure("proj/resources/sep1.cfg.xml");
@@ -30,23 +29,44 @@ public class EmployeeService {
         }
     }
 
-    public static EmployeeService getInstance() {
-        return instance;
+    public static SettingService getInstance() {
+        return ourInstance;
     }
 
-    public Employee getEmployee(int id) {
-
+    public void writeSetting(Setting newSetting) {
         Session session = factory.openSession();
 
         Transaction tr = null;
 
-        Employee result = null;
 
         try {
 
             tr = session.beginTransaction();
 
-            result = (Employee) session.get(Employee.class, id);
+            session.saveOrUpdate(newSetting);
+
+            tr.commit();
+
+        } catch (HibernateException e) {
+            if (tr != null) tr.rollback();
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+    }
+
+    public String readSetting(String settingName) {
+        Session session = factory.openSession();
+
+        Transaction tr = null;
+
+        Setting result = new Setting();
+
+        try {
+
+            tr = session.beginTransaction();
+
+            result = (Setting) session.createQuery("FROM Setting where setting_name = ?").setParameter(0, settingName).uniqueResult();
 
             tr.commit();
 
@@ -57,31 +77,6 @@ public class EmployeeService {
             session.close();
         }
 
-        return result;
-    }
-
-    public Employee getEmployee(String username) {
-        Session session = factory.openSession();
-
-        Transaction tr = null;
-
-        Employee result = null;
-
-        try {
-
-            tr = session.beginTransaction();
-
-            result = (Employee) session.createQuery("FROM Employee where username = ?").setParameter(0, username).uniqueResult();
-
-            tr.commit();
-
-        } catch (HibernateException e) {
-            if (tr != null) tr.rollback();
-            e.printStackTrace();
-        } finally {
-            session.close();
-        }
-
-        return result;
+        return result.getSetting_content();
     }
 }

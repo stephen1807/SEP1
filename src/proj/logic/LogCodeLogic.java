@@ -16,4 +16,5 @@ public class LogCodeLogic {
         lc.setAvailable(false);
         lcs.editLogCode(lc);
     }
+
 }

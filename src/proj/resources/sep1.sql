@@ -88,7 +88,7 @@ CREATE TABLE `logcode` (
   `logcost` float NOT NULL,
   `logunit` varchar(7) NOT NULL,
   `logcost_permission` float NOT NULL,
-  `available` TINYINT(1) NOT NULL DEFAULT '1',
+  `available` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`logcode`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -202,6 +202,30 @@ LOCK TABLES `relation` WRITE;
 /*!40000 ALTER TABLE `relation` DISABLE KEYS */;
 /*!40000 ALTER TABLE `relation` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `setting`
+--
+
+DROP TABLE IF EXISTS `setting`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `setting` (
+  `setting_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `setting_name` varchar(100) NOT NULL,
+  `setting_content` varchar(50) NOT NULL,
+  PRIMARY KEY (`setting_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `setting`
+--
+
+LOCK TABLES `setting` WRITE;
+/*!40000 ALTER TABLE `setting` DISABLE KEYS */;
+/*!40000 ALTER TABLE `setting` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -212,4 +236,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-06-10 22:02:14
+-- Dump completed on 2015-06-15 18:52:03
