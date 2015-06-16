@@ -27,7 +27,7 @@ public class XML_IO {
     private String filePath;
 
     public XML_IO() {
-        String path = new File("src/proj/resources/setting.xml")
+        String path = new File("src/setting.xml")
                 .getAbsolutePath();
         filePath = path;
     }

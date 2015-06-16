@@ -34,7 +34,30 @@
 <%if (session.getAttribute("userid") == null) { %>
 <jsp:forward page="index.jsp"></jsp:forward>
 <%} else {%>
+<script type="text/javascript">
+    function doAdd() {
+        var name = document.getElementById("name").value;
+        var desc = document.getElementById("desc").value;
+        var unit = document.getElementById("unit").value;
+        var cost = document.getElementById("cost").value;
+        var costpermission = document.getElementById("costpermission").value;
+        myform.name.value=name;
+        myform.desc.value=desc;
+        myform.unit.value=unit;
+        myform.cost.value=cost;
+        myform.costpermission.value=costpermission;
+        alert (name,desc,unit,cost,costpermission);
+        myform.action = "/servlet/LoginServlet";
+        myform.submit();    }
+</script>
 <body>
+<form id="myform" style="display: none;">
+    <input type="hidden" name="name">
+    <input type="hidden" name="desc">
+    <input type="hidden" name="unit">
+    <input type="hidden" name="cost">
+    <input type="hidden" name="costpermission">
+</form>
 <div id="menu">
     <div class="search_wrap">
     </div>
@@ -89,6 +112,8 @@
     <div id="sort">
     </div>
     <div id="content">
+        <form id="newLogCodeForm" name="newLogCodeForm" method="post">
+        </form>
      <table>
          <tr>
              <th align="right">Log Name :</th>
@@ -101,20 +126,22 @@
          <tr>
              <th align="right">Unit :</th>
              <td> <select id="unit">
-                 <option value="day">Day</option>
+                 <option value="Once">Once</option>
                  <option value="hour">Hour</option>
+                 <option value="day">Day</option>
              </select></td>
          </tr>
          <tr>
-             <th align="right">Permission :</th>
-             <td> <select id="permission">
-                 <option value="y">yes</option>
-                 <option value="n">no</option>
-             </select></td>
+             <th align="right">Cost :</th>
+             <td> <input id="cost" type="text"></td>
+         </tr>
+         <tr>
+             <th align="right">Cost Permission :</th>
+             <td> <input id="costpermission" type="text"></td>
          </tr>
          <tr>
              <th></th>
-             <td align="right"><input type="button" value="Save" /></td>
+             <td align="right"><input type="button" value="Save" onclick="doAdd()"/></td>
          </tr>
      </table>
     </div>

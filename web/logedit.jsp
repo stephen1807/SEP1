@@ -108,11 +108,12 @@
              </select></td>
          </tr>
          <tr>
-             <th align="right">Permission :</th>
-             <td> <select id="permission">
-                 <option value="y">yes</option>
-                 <option value="n">no</option>
-             </select></td>
+             <th align="right">Cost :</th>
+             <td> <input id="cost" type="text"></td>
+         </tr>
+         <tr>
+             <th align="right">Cost Permission :</th>
+             <td> <input id="costpermission" type="text"></td>
          </tr>
          <tr>
          <th></th>

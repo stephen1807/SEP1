@@ -1,3 +1,5 @@
+<%@ page import="proj.obj.LogCode" %>
+<%@ page import="java.util.List" %>
 <%--
   Created by IntelliJ IDEA.
   User: Zo
@@ -34,7 +36,20 @@
 <%if (session.getAttribute("userid") == null) { %>
 <jsp:forward page="index.jsp"></jsp:forward>
 <%} else {%>
+<script type="text/javascript">
+    function doEdit(logCodeID) {
+        var idForm= document.getElementById("idForm");
+        idForm.logCodeID.value=logCodeID;
+        idForm.action = "/servlet/QueryLogCodeServlet";
+        idForm.submit();
+    }
+</script>
 <body>
+
+<form id="idForm" method="get">
+    <input type="hidden" name="logCodeID"/>
+</form>
+
 <div id="menu">
     <div class="search_wrap">
     </div>
@@ -98,13 +113,23 @@
                 <td>Description</td>
                 <td>Edit</td>
             </tr>
+            <%
+                List<LogCode> logCodeList= (List)request.getAttribute("logCodeList");
+                for(int i=0; i<logCodeList.size(); i++)
+                {
+                    LogCode lc=logCodeList.get(i);
+
+            %>
             <tr>
-                <td>isi</td>
-                <td>isi</td>
-                <td>isi</td>
-                <td>isi</td>
-                <td><button type="submit" id="edit">Edit</button></td>
+                <td><%=lc.getLogcode()%></td>
+                <td><%=lc.getLogname()%></td>
+                <td><%=lc.getLogunit()%></td>
+                <td><%=lc.getLogdescription()%></td>
+                <td><input type="button" value="Edit Log Code" onclick="doEdit(<%=lc.getLogcode()%>)"/></td>
             </tr>
+            <%
+                }
+            %>
         </table>
     </div>
 </div>

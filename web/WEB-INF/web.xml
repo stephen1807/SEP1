@@ -53,6 +53,16 @@
         <servlet-class>proj.servlet.QueryLogServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>QueryLogCodeServlet</servlet-name>
+        <servlet-class>proj.servlet.QueryLogCodeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>QueryLogCodeServlet</servlet-name>
+        <url-pattern>/servlet/QueryLogCodeServlet</url-pattern>
+    </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>AcitivityTrackingServlet</servlet-name>
         <url-pattern>/servlet/AcitivityTrackingServlet</url-pattern>

@@ -71,8 +71,6 @@ public class LoginServlet extends HttpServlet {
                 request.getRequestDispatcher("/home.jsp").forward(request, response);
             }
         }
-        //for logout
-//        session.removeAttribute("userid");
     }
 
     /**

@@ -1,5 +1,7 @@
 package proj.servlet;
 
+import proj.logic.LogCodeLogic;
+import proj.obj.LogCode;
 import proj.service.LogCodeService;
 
 import javax.servlet.ServletException;
@@ -16,7 +18,9 @@ public class DeleteLogCodeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, java.io.IOException {
 
         int logCodeID= Integer.parseInt(request.getParameter("logCodeID"));
-        LogCodeService lcs=LogCodeService.getInstance();
+        LogCodeLogic lcl=new LogCodeLogic();
+
+        lcl.deleteLogCode(logCodeID);
 
         request.getRequestDispatcher("/logcode.jsp").forward(request, response);
     }
