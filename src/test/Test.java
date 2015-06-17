@@ -1,8 +1,8 @@
 package test;
 
-import java.util.Calendar;
+import proj.logic.SalaryLogic;
+
 import java.util.Date;
-import java.util.GregorianCalendar;
 
 /**
  * Created by Stephen on 2015/05/19.
@@ -10,10 +10,11 @@ import java.util.GregorianCalendar;
 public class Test {
 
     public static void main(String[] args) {
-        Date d = new Date();
 
-        Calendar c = new GregorianCalendar();
+        SalaryLogic salaryLogic = new SalaryLogic();
 
-        System.out.println(d.getTime());
+        System.out.println(salaryLogic.getDay(new Date()));
     }
+
+
 }
