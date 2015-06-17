@@ -66,7 +66,7 @@ public class SettingService {
 
             tr = session.beginTransaction();
 
-            result = (Setting) session.createQuery("FROM Setting where setting_name = ?").setParameter(0, settingName).uniqueResult();
+            result = (Setting) session.createQuery("FROM Setting where setting_name = ?").setString(0, settingName).uniqueResult();
 
             tr.commit();
 
