@@ -43,6 +43,10 @@ public class SettingService {
 
             tr = session.beginTransaction();
 
+            Setting temp = (Setting) session.createQuery("FROM Setting WHERE setting_name = :settingname").setParameter("settingname", newSetting.getSetting_name()).uniqueResult();
+            if (temp != null) {
+                newSetting.setSetting_ID(temp.getSetting_ID());
+            }
             session.saveOrUpdate(newSetting);
 
             tr.commit();
