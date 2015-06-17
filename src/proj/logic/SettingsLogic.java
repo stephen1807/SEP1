@@ -86,7 +86,9 @@ public class SettingsLogic {
 
     public int getLoginCode() {
         SettingService settingService = SettingService.getInstance();
-        return Integer.parseInt(settingService.readSetting("LoginCode"));
+        String temp = settingService.readSetting("LoginCode");
+        int result = Integer.parseInt(temp);
+        return result;
     }
 
     public void setLoginCode(int logcode) {

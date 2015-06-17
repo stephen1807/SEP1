@@ -34,6 +34,7 @@
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
     <link rel="apple-touch-icon-precomposed" href="http://www.17sucai.com/static/images/favicon.ico">
+    <script language="javascript" src="js/inactivity.js"></script>
     <title>Attendance System</title>
 </head>
 

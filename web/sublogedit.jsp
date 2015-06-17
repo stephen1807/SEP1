@@ -37,6 +37,7 @@
   <link rel="stylesheet" type="text/css" href="/css/jquery.datetimepicker.css"/ >
   <script src="/js/jquery.js"></script>
   <script src="/js/jquery.datetimepicker.js"></script>
+  <script language="javascript" src="js/inactivity.js"></script>
   <title>Attendance System</title>
 </head>
 <%if (session.getAttribute("userid") == null) { %>

@@ -12,7 +12,6 @@
         </element>
       </element>
       <element id="javaee-facet-resources" facet="SEP1/web/Web" />
-      <element id="file-copy" path="$PROJECT_DIR$/src/setting.xml" />
     </root>
   </artifact>
 </component>

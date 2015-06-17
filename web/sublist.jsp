@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="css/table-Animation.css">
     <script src="/js/jquery.dataTables.min.js"></script>
     <script src="/js/demo.js"></script>
+    <script language="javascript" src="js/inactivity.js"></script>
 
     <title>Attendance System</title>
 </head>

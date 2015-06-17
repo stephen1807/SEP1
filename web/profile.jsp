@@ -29,6 +29,7 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
+    <script language="javascript" src="js/inactivity.js"></script>
     <link rel="apple-touch-icon-precomposed" href="http://www.17sucai.com/static/images/favicon.ico">
     <script>
         var logined = 0
@@ -38,16 +39,7 @@
 <%if (session.getAttribute("userid") == null) { %>
 <jsp:forward page="index.jsp"></jsp:forward>
 <%} else {%>
-<script type="text/javascript">
-    function doview() {
-        var loginusername = document.getElementById("userid").value;
-        var loginpassword = document.getElementById("password").value;
-        myform.loginusername.value=loginusername;
-        myform.loginpassword.value=loginpassword;
-        myform.action = "/servlet/LoginServlet";
-        myform.submit();
-    }
-</script>
+
 <body>
 <div id="menu">
     <div class="search_wrap">

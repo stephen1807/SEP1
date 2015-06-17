@@ -99,7 +99,7 @@
 <script language="javascript" src="js/zepto.min.js"></script>
 <script language="javascript" src="js/fx.js"></script>
 <script language="javascript" src="js/script.js"></script>
-
+<script language="javascript" src="js/inactivity.js"></script>
 </body>
 <%} %>
 </html>
