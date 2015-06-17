@@ -47,7 +47,7 @@ public class RelationService {
 
             tr = session.beginTransaction();
 
-            result = (List<Relation>) session.createQuery("FROM Relation WHERE superiorid = ?").setParameter(0, superiorid).list();
+            result = (List<Relation>) session.createQuery("FROM Relation WHERE superiorid = :superior_id").setParameter("superior_id", superiorid).list();
 
             tr.commit();
 
