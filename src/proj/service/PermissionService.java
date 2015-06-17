@@ -72,7 +72,7 @@ public class PermissionService {
 
             tr = session.beginTransaction();
 
-            result = (List<PermissionIndividual>) session.createQuery("FROM PermissionIndividual WHERE employeeID = ? and logcode = ? and ? between startTime and endTime").setParameter(0, employeeID).setParameter(1, logcode).setParameter(2, date).list();
+            result = (List<PermissionIndividual>) session.createQuery("FROM PermissionIndividual WHERE employeeID = :employee_id and logcode = :logcode and :date between startTime and endTime").setParameter("employee_id", employeeID).setParameter("logcode", logcode).setParameter("date", date).list();
             tr.commit();
 
         } catch (HibernateException e) {
@@ -99,8 +99,8 @@ public class PermissionService {
             Calendar calendar = new GregorianCalendar();
             calendar.setTime(time);
 
-            result = (List<PermissionGlobal>) session.createQuery("FROM PermissionGlobal WHERE ((? between startHour and endHour) OR (? = startHour and ? between startMinute and endMinute)) AND logcode = ?")
-                    .setParameter(0, calendar.get(Calendar.HOUR_OF_DAY)).setParameter(1, calendar.get(Calendar.HOUR_OF_DAY)).setParameter(2, calendar.get(Calendar.MINUTE)).setParameter(3, logcode).list();
+            result = (List<PermissionGlobal>) session.createQuery("FROM PermissionGlobal WHERE ((:hour between startHour and endHour) OR (:hour = startHour and :minute between startMinute and endMinute)) AND logcode = :logcode")
+                    .setParameter("hour", calendar.get(Calendar.HOUR_OF_DAY)).setParameter("minute", calendar.get(Calendar.MINUTE)).setParameter("logcode", logcode).list();
             tr.commit();
 
         } catch (HibernateException e) {

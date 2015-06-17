@@ -69,7 +69,7 @@ public class AttendanceLogService {
 
             tr = session.beginTransaction();
 
-            result = (List<AttendanceLog>) session.createQuery("FROM AttendanceLog where employeeid = ? AND month(entrydate) = ?").setParameter(0, employeeID).setParameter(1, month).list();
+            result = (List<AttendanceLog>) session.createQuery("FROM AttendanceLog where employeeid = :employee_id AND month(entrydate) = :month").setParameter("employee_id", employeeID).setParameter("month", month).list();
 
             tr.commit();
 
