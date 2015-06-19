@@ -81,7 +81,7 @@ DROP TABLE IF EXISTS `logcode`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `logcode` (
-  `logcode` int(11) NOT NULL,
+  `logcode` int(11) NOT NULL AUTO_INCREMENT,
   `logname` varchar(100) NOT NULL,
   `logdescription` varchar(2000) DEFAULT NULL,
   `logcost` float NOT NULL,
