@@ -18,12 +18,12 @@ public class EditLogCodeServlet extends HttpServlet {
 
 
         int logCodeID= Integer.parseInt(request.getParameter("logCodeID"));
-        String logCodeName= request.getParameter("name");
+        String logCodeName= request.getParameter("logCodeName");
 
-        String logDescription=request.getParameter("desc");
-        float logCost=Float.parseFloat(request.getParameter("cost"));
-        String logUnit=request.getParameter("unit");
-        float logCost_permission=Float.parseFloat(request.getParameter("costpermission"));
+        String logDescription=request.getParameter("logCodeDesc");
+        float logCost=Float.parseFloat(request.getParameter("logCost"));
+        String logUnit=request.getParameter("logUnit");
+        float logCost_permission=Float.parseFloat(request.getParameter("logCostPermission"));
 
         LogCodeService lcs=LogCodeService.getInstance();
         LogCode logCode= lcs.getLogCode(logCodeID);
@@ -35,7 +35,7 @@ public class EditLogCodeServlet extends HttpServlet {
 
         lcs.editLogCode(logCode);
 
-        request.getRequestDispatcher("/logcode.jsp").forward(request, response);
+        request.getRequestDispatcher("QueryLogCodeServlet").forward(request, response);
 
     }
 

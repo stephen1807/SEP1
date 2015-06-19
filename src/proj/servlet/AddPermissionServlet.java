@@ -20,18 +20,23 @@ public class AddPermissionServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         int employeeID = Integer.parseInt(request.getParameter("employeeID"));
+        String start_date=request.getParameter("start_date");
+        String start_time=request.getParameter("start_time");
+        String end_date=request.getParameter("end_date");
+        String end_time=request.getParameter("end_time");
         Date startTime = null;
         Date endTime = null;
-        String startTimeStr = request.getParameter("startTime");
+
+        String startTimeStr = start_date + " " + start_time;
         //TODO
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-hh-mm");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd hh:mm");
         try {
             startTime = sdf.parse(startTimeStr);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        String endTimeStr = request.getParameter("endTime");
+        String endTimeStr = end_date + " " + end_time;
         try {
             endTime = sdf.parse(endTimeStr);
         } catch (Exception e) {
@@ -46,7 +51,7 @@ public class AddPermissionServlet extends HttpServlet {
         PermissionService ps = PermissionService.getInstance();
         ps.insertPermission(permission);
         request.setAttribute("employeeID", employeeID);
-        request.getRequestDispatcher("/sublogedit.jsp").forward(request, response);
+        request.getRequestDispatcher("ListSubordinateServlet").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

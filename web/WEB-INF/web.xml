@@ -58,6 +58,46 @@
         <servlet-class>proj.servlet.QueryLogCodeServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>NewPermissionServlet</servlet-name>
+        <servlet-class>proj.servlet.NewPermissionServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AddLogCodeServlet</servlet-name>
+        <servlet-class>proj.servlet.AddLogCodeServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>EditLogCodeServlet</servlet-name>
+        <servlet-class>proj.servlet.EditLogCodeServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>InitEditLogCodeServlet</servlet-name>
+        <servlet-class>proj.servlet.InitEditLogCodeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InitEditLogCodeServlet</servlet-name>
+        <url-pattern>/servlet/InitEditLogCodeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>EditLogCodeServlet</servlet-name>
+        <url-pattern>/servlet/EditLogCodeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddLogCodeServlet</servlet-name>
+        <url-pattern>/servlet/AddLogCodeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>NewPermissionServlet</servlet-name>
+        <url-pattern>/servlet/NewPermissionServlet</url-pattern>
+    </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>QueryLogCodeServlet</servlet-name>
         <url-pattern>/servlet/QueryLogCodeServlet</url-pattern>

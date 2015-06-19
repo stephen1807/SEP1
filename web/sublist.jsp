@@ -44,10 +44,10 @@
 <jsp:forward page="index.jsp"></jsp:forward>
 <%} else {%>
 <script type="text/javascript">
-    function doView(subordinateID) {
+    function doView(employeeID) {
         var month = document.getElementById("month").value;
         var idForm= document.getElementById("idForm");
-        idForm.subordinateID.value=subordinateID;
+        idForm.employeeID.value=employeeID;
         idForm.month.value=month;
         idForm.action = "/servlet/QueryLogServlet";
         idForm.submit();
@@ -55,7 +55,7 @@
 </script>
 <body>
 <form id="idForm" method="get">
-    <input type="hidden" name="subordinateID"/>
+    <input type="hidden" name="employeeID"/>
     <input type="hidden" name="month"/>
 </form>
 
@@ -69,11 +69,10 @@
             <div class="clear"></div></a></li>
         <%  Integer type = (Integer)session.getAttribute("type");
             if (type == 1) {%>
-        <li class="nav_site"><a href="<%=basePath%>logcode.jsp"><i></i><span>Log Code</span><b></b>
+        <li class="nav_site"><a href="<%=basePath%>servlet/QueryLogCodeServlet"><i></i><span>Log Code</span><b></b>
 
             <div class="clear"></div>
         </a></li>
-        <%}%>
         <%}%>
     </ul>
 
@@ -119,7 +118,7 @@
             <option value="11">November</option>
             <option value="12">December</option>
         </select>
-        <table id="example" class="display" cellspacing="0" width="50%">
+        <table id="example" class="display" cellspacing="0" width="50%" style="text-align: center">
             <thead>
             <tr>
                 <th>Id</th>
@@ -149,6 +148,7 @@
                 <td><%=e.getEmployeeID()%></td>
                 <td><%=e.getName()%></td>
                 <td><%=e.getDepartmentID()%></td>
+                <td><%=e.getBaseSalary()%></td>
                 <td><input type="button" value="View" onclick="doView(<%=e.getEmployeeID()%>)"/></td>
             </tr>
             </tbody>

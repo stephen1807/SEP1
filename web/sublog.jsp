@@ -2,6 +2,7 @@
 <%@ page import="java.util.List" %>
 <%@ page import="proj.obj.Employee" %>
 <%@ page import="proj.service.EmployeeService" %>
+<%@ page import="proj.obj.LogCode" %>
 <%--
   Created by IntelliJ IDEA.
   User: Zo
@@ -42,7 +43,7 @@
     function doAdd(employeeID) {
         var idForm = document.getElementById("idForm");
         idForm.employeeID.value=employeeID;
-        idForm.action = "/servlet/AddPermissionServlet";
+        idForm.action = "/servlet/NewPermissionServlet";
         idForm.submit();
     }
 </script>
@@ -71,7 +72,7 @@
         </a></li>
         <%  Integer type = (Integer)session.getAttribute("type");
             if (type == 1) {%>
-        <li class="nav_site"><a href="<%=basePath%>logcode.jsp"><i></i><span>Log Code</span><b></b>
+        <li class="nav_site"><a href="<%=basePath%>servlet/QueryLogCodeServlet"><i></i><span>Log Code</span><b></b>
 
             <div class="clear"></div>
         </a></li>
@@ -116,11 +117,12 @@
         <table border="1" style="width:100%; left: 200px;">
             <tr>
                 <td>Date and Time</td>
-                <td>Type</td>
-                <td>Description</td>
+                <td>Log Code</td>
+                <td>Log Name</td>
             </tr>
             <%
                 List<AttendanceLog> attendanceList = (List) request.getAttribute("attendanceList");
+                List<LogCode> logCodeList=(List) request.getAttribute("logCodeList");
                 for (int i = 0; i < attendanceList.size(); i++) {
                     AttendanceLog al = attendanceList.get(i);
 
@@ -131,7 +133,17 @@
                 </td>
                 <td><%=al.getLogcode()%>
                 </td>
-                <td>Description</td>
+                <% for(int j=0; j<logCodeList.size(); j++)
+                    { LogCode lc=logCodeList.get(j);
+                        if(lc.getLogcode()==al.getLogcode())
+                        {
+                %>
+                    <td ><%=lc.getLogname()%></td >
+                <%
+                        }
+                    }
+
+                %>
             </tr>
             <%
             }

@@ -41,7 +41,7 @@
     function doEdit(logCodeID) {
         var idForm= document.getElementById("idForm");
         idForm.logCodeID.value=logCodeID;
-        idForm.action = "/servlet/QueryLogCodeServlet";
+        idForm.action = "/servlet/InitEditLogCodeServlet";
         idForm.submit();
     }
 </script>
@@ -69,7 +69,7 @@
         </a></li>
         <%  Integer type = (Integer)session.getAttribute("type");
             if (type == 1) {%>
-        <li class="nav_site menu_cur"><a href="<%=basePath%>logcode.jsp"><i></i><span>Log Code</span><b></b>
+        <li class="nav_site menu_cur"><a href="<%=basePath%>servlet/QueryLogCodeServlet"><i></i><span>Log Code</span><b></b>
 
             <div class="clear"></div>
         </a></li>
@@ -105,7 +105,7 @@
     <div id="sort">
     </div>
     <div id="content">
-        <button type="submit" id="new">New Log</button>
+       <a href="lognew.jsp"><button type="submit" id="new">New Log</button></a>
         <table border="1" style="width:50%; left: 200px;">
             <tr>
                 <td>Log Id</td>

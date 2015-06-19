@@ -1,5 +1,8 @@
 package proj.servlet;
 
+import proj.logic.EmployeeLogic;
+import proj.service.EmployeeService;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,10 +24,16 @@ public class LogoutServlet extends HttpServlet {
 
         HttpSession session = request.getSession();
 
+        int EmployeeID=(int)session.getAttribute("userid");
+
+        EmployeeLogic el= new EmployeeLogic();
+        el.employeeLogout(EmployeeID);
+
         session.removeAttribute("userid");
         session.removeAttribute("name");
+        session.removeAttribute("type");
 
 
-        request.getRequestDispatcher("/login.jsp").forward(request, response);
+        request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
 }

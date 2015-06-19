@@ -56,7 +56,7 @@
       closeOnDateSelect:true
     });
     jQuery('#date_timepicker_end').datetimepicker({
-      format:'Y/m/d',
+      format:'Y/m/d H:i',
       onShow:function( ct ){
         this.setOptions({
           minDate:jQuery('#date_timepicker_start').val()?jQuery('#date_timepicker_start').val():false
@@ -65,8 +65,6 @@
       closeOnDateSelect:true,
       timepicker:false
     });
-  });
-
   jQuery('#timepicker').datetimepicker({
     datepicker:false,
     format:'H:i'
@@ -75,16 +73,34 @@
     datepicker:false,
     format:'H:i'
   });
+  });
   function dosave() {
-    var id = document.getElementById("id").value;
+    var logeditform=document.getElementById("logeditform");
+    var employeeID = document.getElementById("id").value;
     var start_date = document.getElementById("date_timepicker_start").value;
     var start_time = document.getElementById("timepicker").value;
     var end_date = document.getElementById("date_timepicker_end").value;
     var end_time = document.getElementById("timepicker1").value;
     var type = document.getElementById("type").value;
+    logeditform.employeeID.value=employeeID;
+    logeditform.start_date.value=start_date;
+    logeditform.start_time.value=start_time;
+    logeditform.end_date.value=end_date;
+    logeditform.end_time.value=end_time;
+    logeditform.type.value=type;
+    logeditform.action="/servlet/AddPermissionServlet"
+    logeditform.submit();
   }
 </script>
 <body>
+<form id="logeditform" style="display: none;">
+  <input type="hidden" name="employeeID">
+  <input type="hidden" name="start_date">
+  <input type="hidden" name="start_time">
+  <input type="hidden" name="end_date">
+  <input type="hidden" name="end_time">
+  <input type="hidden" name="type">
+</form>
 <div id="menu">
   <div class="search_wrap">
   </div>
@@ -103,7 +119,7 @@
     </a></li>
     <%  Integer type = (Integer)session.getAttribute("type");
       if (type == 1) {%>
-    <li class="nav_site"><a href="<%=basePath%>logcode.jsp"><i></i><span>Log Code</span><b></b>
+    <li class="nav_site"><a href="<%=basePath%>servlet/QueryLogCodeServlet"><i></i><span>Log Code</span><b></b>
 
       <div class="clear"></div>
     </a></li>

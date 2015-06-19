@@ -1,4 +1,4 @@
-var IDLE_TIMEOUT = 10; //seconds
+var IDLE_TIMEOUT = 1800; //seconds
 var _idleSecondsTimer = null;
 var _idleSecondsCounter = 0;
 
@@ -23,9 +23,9 @@ function CheckIdleTime() {
          oPanel.innerHTML = (IDLE_TIMEOUT - _idleSecondsCounter) + "";
     if (_idleSecondsCounter >= IDLE_TIMEOUT) {
         window.clearInterval(_idleSecondsCounter);
-        alert("Time expired!");
-        document.action=servlet/InactivityServlet
-        
+        alert("you have been inactive for");
+        document.location.href = "../servlet/LogoutServlet";
+        document.submit();
      }
 }
 	

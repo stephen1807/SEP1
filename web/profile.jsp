@@ -59,7 +59,7 @@
         </a></li>
         <%  Integer type = (Integer)session.getAttribute("type");
             if (type == 1) {%>
-        <li class="nav_site"><a href="<%=basePath%>logcode.jsp"><i></i><span>Log Code</span><b></b>
+        <li class="nav_site"><a href="<%=basePath%>servlet/QueryLogCodeServlet"><i></i><span>Log Code</span><b></b>
 
             <div class="clear"></div>
         </a></li>
@@ -95,37 +95,37 @@
     <div id="sort">
     </div>
     <div id="content">
-        <table border="1" style="width:50%; left: 200px;">
+        <div><img src="images/profile.png" style="width:100px;height:100px;padding-left:390px;">
+        </div><div><table style="width:60%; padding-left: 500px;">
             <%
                 Employee emp = (Employee) request.getAttribute("employee");
                 java.text.DateFormat df=new java.text.SimpleDateFormat("dd/MM/yyyy");
             %>
-
             <tr>
-                <td>ID</td>
+                <td>ID :</td>
                 <td><%=emp.getEmployeeID()%></td>
             </tr>
             <tr>
-                <td>Employee Name</td>
+                <td>Employee Name :</td>
                 <td><%=emp.getName()%></td>
             </tr>
             <tr>
-                <td>Department ID</td>
+                <td>Department ID :</td>
                 <td><%=emp.getDepartmentID()%></td>
             </tr>
             <tr>
-                <td>Gender</td>
+                <td>Gender :</td>
                 <td><%=emp.getGender()%></td>
             </tr>
             <tr>
-                <td>DOB</td>
+                <td>DOB :</td>
                 <td><%=df.format(emp.getDOB())%></td>
             </tr>
             <tr>
-                <td>Phone</td>
+                <td>Phone :</td>
                 <td><%=emp.getPhone()%></td>
             </tr>
-        </table>
+        </table></div>
     </div>
     <div class="push_msk"></div>
 </div>

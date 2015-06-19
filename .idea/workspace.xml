@@ -1,24 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f19063b7-4cf3-4217-9da8-63513e1ec095" name="Default" comment="Changed setting storage from XML to database&#10;&#10;(cherry picked from commit b8872f00e67242a4a72c1432d883ba61e88da5e2)&#10;&#10;Conflicts:&#10;&#9;src/proj/logic/SettingsLogic.java&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/inactivity.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SEP1_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SEP1_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/proj/service/SettingService.java" afterPath="$PROJECT_DIR$/src/proj/service/SettingService.java" />
+    <list default="true" id="f19063b7-4cf3-4217-9da8-63513e1ec095" name="Default" comment="final">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/profile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/proj/servlet/InitEditLogCodeServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/proj/servlet/NewPermissionServlet.java" />
+      <change type="DELETED" beforePath="F:\Users\ZO\SEP\web\js\jquery-1.3.2.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/proj/servlet/AcitivityTrackingServlet.java" afterPath="$PROJECT_DIR$/src/proj/servlet/AcitivityTrackingServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/proj/servlet/AddLogCodeServlet.java" afterPath="$PROJECT_DIR$/src/proj/servlet/AddLogCodeServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/proj/servlet/AddPermissionServlet.java" afterPath="$PROJECT_DIR$/src/proj/servlet/AddPermissionServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/proj/servlet/EditLogCodeServlet.java" afterPath="$PROJECT_DIR$/src/proj/servlet/EditLogCodeServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/proj/servlet/LoginServlet.java" afterPath="$PROJECT_DIR$/src/proj/servlet/LoginServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/proj/servlet/LogoutServlet.java" afterPath="$PROJECT_DIR$/src/proj/servlet/LogoutServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/proj/servlet/QueryLogServlet.java" afterPath="$PROJECT_DIR$/src/proj/servlet/QueryLogServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/proj/logic/SettingsLogic.java" afterPath="$PROJECT_DIR$/src/proj/logic/SettingsLogic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Test.java" afterPath="$PROJECT_DIR$/src/test/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/home.jsp" afterPath="$PROJECT_DIR$/web/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/inactivity.js" afterPath="$PROJECT_DIR$/web/js/inactivity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.datetimepicker.js" afterPath="$PROJECT_DIR$/web/js/jquery.datetimepicker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/logcode.jsp" afterPath="$PROJECT_DIR$/web/logcode.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/logedit.jsp" afterPath="$PROJECT_DIR$/web/logedit.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/lognew.jsp" afterPath="$PROJECT_DIR$/web/lognew.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/profile.jsp" afterPath="$PROJECT_DIR$/web/profile.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/proj/resources/sep1.sql" afterPath="$PROJECT_DIR$/src/proj/resources/sep1.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/sublist.jsp" afterPath="$PROJECT_DIR$/web/sublist.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/sublog.jsp" afterPath="$PROJECT_DIR$/web/sublog.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/sublogedit.jsp" afterPath="$PROJECT_DIR$/web/sublogedit.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="F:\Users\ZO\SEP\web\js\demo.cs" afterPath="$PROJECT_DIR$/web/js/demo.js" />
     </list>
     <list id="02647d37-70b9-48c5-968b-836d90b7bfea" name="Changed setting storage from XML to database (cherry picked from commit b8872f0)" comment="Changed setting storage from XML to database&#10;(cherry picked from commit b8872f0)" />
     <ignored path="SEP1.iws" />
@@ -33,6 +43,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SEP1$Test.coverage" NAME="Test Coverage Results" MODIFIED="1434551172252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.*</FILTER>
+    </SUITE>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="F:\Users\ZO\SEP" />
   </component>
@@ -64,24 +79,6 @@
         <option name="myItemId" value="sep1" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="setting" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - sep1@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="sep1" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -90,31 +87,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lognew.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/lognew.jsp">
+      <file leaf-file-name="logcode.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/logcode.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+            <state vertical-scroll-proportion="37.26923">
+              <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/profile.jsp">
+      <file leaf-file-name="QueryLogCodeServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/proj/servlet/QueryLogCodeServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sublist.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/sublist.jsp">
+      <file leaf-file-name="AddLogCodeServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/proj/servlet/AddLogCodeServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+              <caret line="35" column="66" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditLogCodeServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/proj/servlet/EditLogCodeServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logedit.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/logedit.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.9230769">
+              <caret line="47" column="67" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.137931">
+              <caret line="82" column="52" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InitEditLogCodeServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/proj/servlet/InitEditLogCodeServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,51 +160,19 @@
       <file leaf-file-name="sublog.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/sublog.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
+            <state vertical-scroll-proportion="-10.730769">
+              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sublogedit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/sublogedit.jsp">
+      <file leaf-file-name="sep1.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/proj/resources/sep1.sql">
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sep1.cfg.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/proj/resources/sep1.cfg.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/proj/service/SettingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49446493">
-              <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sep1.setting" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/987d45b3/f523c414-d7b2-47e5-8249-584e3cfc27fd/sep1..setting">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
@@ -175,21 +180,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Test.java">
+      <file leaf-file-name="QueryLogServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/proj/servlet/QueryLogServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingsLogic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/proj/logic/SettingsLogic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="89" column="10" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -201,6 +196,7 @@
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="12304007Vincentlorenzo &lt;vincentlorenzo@ymail.com&gt;" />
+        <option value="stephen1807 &lt;stef.stephen.r@gmail.com&gt;" />
         <option value="Lozo &lt;vincentlorenzo@ymail.com&gt;" />
       </list>
     </option>
@@ -226,25 +222,34 @@
         <option value="$PROJECT_DIR$/src/proj/servlet/SetLogCodeServlet.java" />
         <option value="$PROJECT_DIR$/src/proj/servlet/EmployeeProfileServlet.java" />
         <option value="$PROJECT_DIR$/src/proj/servlet/QueryLogCodeServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/proj/servlet/AddLogCodeServlet.java" />
-        <option value="$PROJECT_DIR$/src/proj/servlet/EditLogCodeServlet.java" />
         <option value="$PROJECT_DIR$/src/proj/servlet/DeleteLogCodeServlet.java" />
-        <option value="$PROJECT_DIR$/src/proj/servlet/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/proj/io/XML_IO.java" />
         <option value="$PROJECT_DIR$/src/proj/obj/Setting.java" />
         <option value="$PROJECT_DIR$/src/proj/logic/EmployeeLogic.java" />
-        <option value="$PROJECT_DIR$/src/proj/logic/SettingsLogic.java" />
         <option value="$PROJECT_DIR$/web/home.jsp" />
-        <option value="$PROJECT_DIR$/web/logcode.jsp" />
-        <option value="$PROJECT_DIR$/web/logedit.jsp" />
-        <option value="$PROJECT_DIR$/web/lognew.jsp" />
+        <option value="$PROJECT_DIR$/src/proj/service/SettingService.java" />
+        <option value="$PROJECT_DIR$/src/proj/logic/SettingsLogic.java" />
+        <option value="$PROJECT_DIR$/src/proj/servlet/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/proj/servlet/LogoutServlet.java" />
+        <option value="$PROJECT_DIR$/src/proj/servlet/AcitivityTrackingServlet.java" />
+        <option value="$PROJECT_DIR$/web/js/inactivity.js" />
+        <option value="$PROJECT_DIR$/src/test/Test.java" />
+        <option value="$PROJECT_DIR$/src/proj/servlet/NewPermissionServlet.java" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/web/profile.jsp" />
         <option value="$PROJECT_DIR$/web/sublist.jsp" />
-        <option value="$PROJECT_DIR$/web/sublog.jsp" />
+        <option value="$PROJECT_DIR$/src/proj/servlet/AddPermissionServlet.java" />
+        <option value="$PROJECT_DIR$/web/js/jquery.datetimepicker.js" />
         <option value="$PROJECT_DIR$/web/sublogedit.jsp" />
-        <option value="$PROJECT_DIR$/src/test/Test.java" />
-        <option value="$PROJECT_DIR$/src/proj/service/SettingService.java" />
+        <option value="$PROJECT_DIR$/web/lognew.jsp" />
+        <option value="$PROJECT_DIR$/src/proj/servlet/AddLogCodeServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/proj/servlet/InitEditLogCodeServlet.java" />
+        <option value="$PROJECT_DIR$/web/logcode.jsp" />
+        <option value="$PROJECT_DIR$/src/proj/servlet/EditLogCodeServlet.java" />
+        <option value="$PROJECT_DIR$/web/logedit.jsp" />
+        <option value="$PROJECT_DIR$/src/proj/servlet/QueryLogServlet.java" />
+        <option value="$PROJECT_DIR$/web/sublog.jsp" />
       </list>
     </option>
   </component>
@@ -304,7 +309,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -333,43 +339,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SEP1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SEP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SEP1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SEP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -388,28 +358,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="proj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SEP1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SEP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -435,68 +383,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SEP1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SEP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="obj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SEP1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SEP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SEP1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SEP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -504,20 +393,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/proj/resources/setting.xml" />
+    <property name="last_opened_file_path" value="F:/Desktop" />
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Users\ZO\SEP\web\images" />
       <recent name="F:\Users\ZO\SEP\web\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Users\ZO\SEP\src\proj\resources" />
       <recent name="F:\Users\ZO\SEP\src" />
     </key>
   </component>
@@ -778,9 +669,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Unknown" factoryName="Unknown">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -897,7 +785,10 @@
       <workItem from="1434356227042" duration="5639000" />
       <workItem from="1434521472431" duration="2330000" />
       <workItem from="1434524198749" duration="3945000" />
-      <workItem from="1434549296185" duration="640000" />
+      <workItem from="1434549296185" duration="15078000" />
+      <workItem from="1434636829886" duration="1578000" />
+      <workItem from="1434638604183" duration="7793000" />
+      <workItem from="1434702886281" duration="7638000" />
     </task>
     <task id="LOCAL-00001" summary="Modified EmployeeProfileServlet">
       <created>1434100718777</created>
@@ -935,11 +826,41 @@
       <option name="project" value="LOCAL" />
       <updated>1434521768171</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added js for tracking system *reza's&#10;">
+      <created>1434550007928</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1434550007928</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Changed to setString for string parameters&#10;(cherry picked from commit 3645b7a)">
+      <created>1434550026449</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1434550026449</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Changed positional parameters to named parameters&#10;(cherry picked from commit 15cd4d1)">
+      <created>1434550675248</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1434550675248</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added additional check for setting write&#10;(cherry picked from commit 284ab4c)">
+      <created>1434551769359</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1434551769359</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixed typos&#10;(cherry picked from commit 6305bd9)">
+      <created>1434552987614</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1434552987614</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25371000" />
+    <option name="totallyTimeSpent" value="56818000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -952,23 +873,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48722318" sideWeight="0.33055976" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49063033" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48722318" sideWeight="0.66944027" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49063033" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36120996" sideWeight="0.66944027" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22163388" sideWeight="0.4822335" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22163388" sideWeight="0.5177665" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22087745" sideWeight="0.45953003" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22087745" sideWeight="0.54046994" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -982,6 +903,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1036,11 +958,24 @@
     <MESSAGE value="Added insert&#10;(cherry picked from commit cd15fa2)" />
     <MESSAGE value="finalise the log jsp files" />
     <MESSAGE value="Finished salary calculation, integrated overwork handling with login &amp; logout&#10;(cherry picked from commit e76f621)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished salary calculation, integrated overwork handling with login &amp; logout&#10;(cherry picked from commit e76f621)" />
+    <MESSAGE value="added js for tracking system *reza's&#10;" />
+    <MESSAGE value="Changed to setString for string parameters&#10;(cherry picked from commit 3645b7a)" />
+    <MESSAGE value="Changed positional parameters to named parameters&#10;(cherry picked from commit 15cd4d1)" />
+    <MESSAGE value="Added additional check for setting write&#10;(cherry picked from commit 284ab4c)" />
+    <MESSAGE value="Fixed typos&#10;(cherry picked from commit 6305bd9)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed typos&#10;(cherry picked from commit 6305bd9)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/proj/servlet/AddPermissionServlet.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1049,202 +984,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/DeleteLogCodeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/logcode.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="45" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/AddLogCodeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/SetLogCodeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/EmployeeProfileServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/AddPermissionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/obj/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/logic/EmployeeLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/service/EmployeeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/AcitivityTrackingServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/AddAttendanceLogServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/EditLogCodeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="20" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/resources/sep1.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/AcitivityTrackingServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/AddAttendanceLogServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/SetLogCodeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/obj/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/QueryLogServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="79" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="49" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/obj/LogCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/service/LogCodeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/AddPermissionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/EditLogCodeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/DeleteLogCodeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/AddLogCodeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="744" column="0" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="541" column="0" selection-start-line="541" selection-start-column="0" selection-end-line="541" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/service/EmployeeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1255,18 +999,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/resources/sep1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24542125">
-          <caret line="204" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="236" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/proj/logic/SalaryLogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1277,27 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.769231">
-          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f523c414-d7b2-47e5-8249-584e3cfc27fd/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1305,86 +1020,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/proj/logic/EmployeeLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/inactivity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3076925">
-          <caret line="100" column="58" selection-start-line="100" selection-start-column="58" selection-end-line="101" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/logcode.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
-          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/logedit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/lognew.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/sublist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/987d45b3/f523c414-d7b2-47e5-8249-584e3cfc27fd/sep1..setting">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1396,18 +1040,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/sublogedit.jsp">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/text/SimpleDateFormat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <caret line="1438" column="0" selection-start-line="1438" selection-start-column="0" selection-end-line="1438" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/sublog.jsp">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/text/DateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="363" column="0" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/obj/AttendanceLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/service/AttendanceLogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8754579">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/servlet/InactivityTrackingServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="65" selection-start-line="63" selection-start-column="65" selection-end-line="64" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/service/EmployeeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/logic/AttendanceLogLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/logic/EmployeeLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/servlet/AcitivityTrackingServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/servlet/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="36" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1415,15 +1134,435 @@
     <entry file="file://$PROJECT_DIR$/src/proj/logic/SettingsLogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="10" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/servlet/CalculateSalaryServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/proj/service/SettingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49446493">
-          <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/servlet/NewPermissionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/servlet/ListSubordinateServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javaee-api-7.0.jar!/javax/servlet/http/HttpServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4390244">
+          <caret line="208" column="19" selection-start-line="208" selection-start-column="19" selection-end-line="208" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.dataTables.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8717949">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/f523c414-d7b2-47e5-8249-584e3cfc27fd.schema:sep1">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>f523c414-d7b2-47e5-8249-584e3cfc27fd.schema:sep1</OriginalElement>
+          <nodes>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.permissionglobal</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.setting</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.permission</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.permissionindividual</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.relation</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.attendancelog</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.employee</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.logcode</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.1315363881401617" x="505.0" y="359.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/f523c414-d7b2-47e5-8249-584e3cfc27fd">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>f523c414-d7b2-47e5-8249-584e3cfc27fd</OriginalElement>
+          <nodes>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.help_keyword</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.GLOBAL_STATUS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.SCHEMA_PRIVILEGES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.hosts</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.REFERENTIAL_CONSTRAINTS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_stages_summary_by_user_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.SCHEMATA</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_waits_history</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.permission</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.threads</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_CMP_PER_INDEX</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_statements_summary_by_account_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.socket_instances</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.host_cache</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_stages_summary_by_thread_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.ENGINES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.servers</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.OPTIMIZER_TRACE</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.time_zone_transition_type</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_statements_summary_by_digest</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.user</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_waits_current</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.setup_instruments</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_SYS_TABLES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.ndb_binlog_index</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_SYS_DATAFILES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.logcode</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.setup_consumers</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_SYS_FIELDS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.innodb_index_stats</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_TRX</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.func</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_SYS_TABLESTATS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.table_io_waits_summary_by_table</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_LOCK_WAITS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.PLUGINS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.table_io_waits_summary_by_index_usage</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_SYS_INDEXES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.setting</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.SESSION_VARIABLES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.relation</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_CMP_RESET</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.tables_priv</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.attendancelog</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.TABLES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_FT_BEING_DELETED</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.help_topic</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.time_zone</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.KEY_COLUMN_USAGE</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_METRICS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_statements_history_long</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.slave_worker_info</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.USER_PRIVILEGES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_BUFFER_POOL_STATS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.file_summary_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_stages_summary_by_account_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_statements_summary_by_host_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.table_lock_waits_summary_by_table</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.employee</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_stages_summary_global_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.SESSION_STATUS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_waits_summary_by_account_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_CMPMEM</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.TABLESPACES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_SYS_FOREIGN_COLS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.setup_objects</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_CMP</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_waits_summary_by_instance</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_statements_summary_by_user_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.GLOBAL_VARIABLES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.rwlock_instances</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_FT_INDEX_CACHE</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.users</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.slave_relay_log_info</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.setup_timers</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.ROUTINES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_BUFFER_PAGE_LRU</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_stages_history</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_waits_summary_global_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_stages_summary_by_host_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.permissionindividual</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_stages_current</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.file_summary_by_instance</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.setup_actors</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.PROCESSLIST</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.PARAMETERS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.time_zone_leap_second</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_SYS_TABLESPACES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_statements_summary_global_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.STATISTICS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.columns_priv</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.time_zone_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_CMP_PER_INDEX_RESET</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.mutex_instances</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_stages_history_long</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.time_zone_transition</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.slow_log</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_LOCKS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.performance_timers</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.COLLATIONS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.proxies_priv</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_statements_summary_by_thread_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.procs_priv</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_statements_current</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.COLUMN_PRIVILEGES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.db</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:sep1.permissionglobal</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.socket_summary_by_instance</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.file_instances</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_FT_CONFIG</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_FT_DELETED</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.slave_master_info</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.VIEWS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_FT_DEFAULT_STOPWORD</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.PARTITIONS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.proc</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.CHARACTER_SETS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.TRIGGERS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.objects_summary_global_by_type</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_BUFFER_PAGE</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_waits_summary_by_user_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.innodb_table_stats</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.general_log</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_waits_summary_by_host_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.session_connect_attrs</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.TABLE_CONSTRAINTS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.FILES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.help_relation</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.socket_summary_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_waits_history_long</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.COLLATION_CHARACTER_SET_APPLICABILITY</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.COLUMNS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_FT_INDEX_TABLE</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.cond_instances</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_CMPMEM_RESET</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.plugin</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_waits_summary_by_thread_by_event_name</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.event</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.events_statements_history</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:mysql.help_category</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_SYS_FOREIGN</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.PROFILING</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.EVENTS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.TABLE_PRIVILEGES</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.accounts</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:information_schema.INNODB_SYS_COLUMNS</node>
+            <node x="" y="">f523c414-d7b2-47e5-8249-584e3cfc27fd.table:performance_schema.session_account_connect_attrs</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.20000000000000015" x="3464.0" y="1727.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="61" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/jquery.datetimepicker.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43589744">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="345" column="25" selection-start-line="345" selection-start-column="25" selection-end-line="345" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/servlet/AddPermissionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="60" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.615385">
+          <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/inactivity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.datetimepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.4827585">
+          <caret line="446" column="33" selection-start-line="446" selection-start-column="33" selection-end-line="446" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/sublist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.269231">
+          <caret line="107" column="31" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/sublogedit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6792452">
+          <caret line="160" column="54" selection-start-line="160" selection-start-column="39" selection-end-line="160" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/lognew.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/servlet/QueryLogCodeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/servlet/InitEditLogCodeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/servlet/AddLogCodeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="66" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.137931">
+          <caret line="82" column="52" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/logedit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="47" column="67" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/servlet/EditLogCodeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/logcode.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="37.26923">
+          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/servlet/QueryLogServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/sublog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.730769">
+          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proj/resources/sep1.sql">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

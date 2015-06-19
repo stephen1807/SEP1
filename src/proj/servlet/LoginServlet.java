@@ -1,5 +1,6 @@
 package proj.servlet;
 
+import proj.logic.AttendanceLogLogic;
 import proj.logic.EmployeeLogic;
 import proj.obj.Employee;
 
@@ -53,7 +54,6 @@ public class LoginServlet extends HttpServlet {
         EmployeeLogic el = new EmployeeLogic();
 
         Employee employee = el.employeeLogin(username, password);
-
 
         if (employee == null) {
             request.getRequestDispatcher("/index.jsp").forward(request, response);

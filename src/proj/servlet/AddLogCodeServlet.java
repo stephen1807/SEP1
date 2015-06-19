@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletResponse;
 public class AddLogCodeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, java.io.IOException {
 
-        int logCodeID= Integer.parseInt(request.getParameter("logCodeID"));
         String logCodeName= request.getParameter("name");
 
         String logDescription=request.getParameter("desc");
@@ -34,7 +33,7 @@ public class AddLogCodeServlet extends HttpServlet {
 
         lcs.insertLogCode(logCode);
 
-        request.getRequestDispatcher("/logcode.jsp").forward(request, response);
+        request.getRequestDispatcher("/servlet/QueryLogCodeServlet").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, java.io.IOException {

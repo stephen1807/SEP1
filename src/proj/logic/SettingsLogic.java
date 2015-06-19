@@ -118,21 +118,21 @@ public class SettingsLogic {
 
     public int getOverworkStartCode() {
         SettingService settingService = SettingService.getInstance();
-        return Integer.parseInt(settingService.readSetting("OverworkCode"));
+        return Integer.parseInt(settingService.readSetting("OverworkStartCode"));
     }
 
     public void setOverworkStartCode(int logcode) {
         SettingService settingService = SettingService.getInstance();
-        settingService.writeSetting(new Setting("OverworkCode", String.valueOf(logcode)));
+        settingService.writeSetting(new Setting("OverworkStartCode", String.valueOf(logcode)));
     }
 
     public int getOverworkEndCode() {
         SettingService settingService = SettingService.getInstance();
-        return Integer.parseInt(settingService.readSetting("OverworkCode"));
+        return Integer.parseInt(settingService.readSetting("OverworkEndCode"));
     }
 
     public void setOverworkEndCode(int logcode) {
         SettingService settingService = SettingService.getInstance();
-        settingService.writeSetting(new Setting("OverworkCode", String.valueOf(logcode)));
+        settingService.writeSetting(new Setting("OverworkEndCode", String.valueOf(logcode)));
     }
 }

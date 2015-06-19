@@ -18,13 +18,13 @@ public class Test {
 
 //        Calendar calendar = new GregorianCalendar();
 //
-//        calendar.set(Calendar.HOUR_OF_DAY, 20);
-//        calendar.set(Calendar.MINUTE, 30);
+//        calendar.set(Calendar.HOUR_OF_DAY, 02);
+//        calendar.set(Calendar.MINUTE, 00);
 //
-//        logic.setOverworkStartTime(calendar.getTime());
+//        logic.setOverworkFinishTime(calendar.getTime());
 
-        logic.setLoginCode(1);
+        logic.setOverworkEndCode(4);
 
-        System.out.println(logic.getLoginCode());
+//        System.out.println(logic.getOverworkFinishTime());
     }
 }

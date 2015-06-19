@@ -1,3 +1,4 @@
+<%@ page import="proj.obj.LogCode" %>
 <%--
   Created by IntelliJ IDEA.
   User: Zo
@@ -35,12 +36,35 @@
 <%if (session.getAttribute("userid") == null) { %>
 <jsp:forward page="index.jsp"></jsp:forward>
 <%} else {%>
+<script type="text/javascript">
+    function doEdit(logCodeID) {
+        var idForm= document.getElementById("idForm");
+
+        idForm.logCodeID.value=logCodeID;
+        idForm.logCodeName.value= document.getElementById("name").value;
+        idForm.logCost.value= document.getElementById("cost").value;
+        idForm.logCostPermission.value= document.getElementById("costpermission").value;
+        idForm.logCodeDesc.value= document.getElementById("desc").value;
+        idForm.logUnit.value= document.getElementById("unit").value;
+        idForm.action = "/servlet/EditLogCodeServlet";
+        idForm.submit();
+    }
+</script>
 <body>
+<form id="idForm" method="get">
+    <input type="hidden" name="logCodeID"/>
+    <input type="hidden" name="logCodeName"/>
+    <input type="hidden" name="logCost"/>
+    <input type="hidden" name="logCostPermission"/>
+    <input type="hidden" name="logUnit"/>
+    <input type="hidden" name="logCodeDesc"/>
+</form>
+
 <div id="menu">
     <div class="search_wrap">
     </div>
     <ul>
-        <li class="nav_index menu_cur"><a href="home.jsp"><i></i><span>Home</span><b></b>
+        <li class="nav_index"><a href="home.jsp"><i></i><span>Home</span><b></b>
 
             <div class="clear"></div>
         </a></li>
@@ -54,7 +78,7 @@
         </a></li>
         <%  Integer type = (Integer)session.getAttribute("type");
             if (type == 1) {%>
-        <li class="nav_site menu_cur"><a href="<%=basePath%>logcode.jsp"><i></i><span>Log Code</span><b></b>
+        <li class="nav_site menu_cur"><a href="<%=basePath%>servlet/QueryLogCodeServlet"><i></i><span>Log Code</span><b></b>
 
             <div class="clear"></div>
         </a></li>
@@ -90,35 +114,33 @@
     <div id="sort">
     </div>
     <div id="content">
+        <%
+            LogCode lc= (LogCode)request.getAttribute("logCode");
+        %>
      <table>
          <tr>
              <th align="right">Log Name :</th>
-                 <td><input type="text" id="name"></td>
+                 <td><input type="text" name="name" id="name" value="<%=lc.getLogname()%>"></td>
              </tr>
              <tr>
                  <th align="right">Description :</th>
-                 <td><input id="desc" type="text"></td>
+                 <td><input id="desc" name="desc" type="text" value="<%=lc.getLogdescription()%>"></td>
              </tr>
          <tr>
              <th align="right">Unit :</th>
-             <td> <select id="unit">
-                 <option value="once">Once</option>
-                 <option value="hour">Hour</option>
-                 <option value="day">Day</option>
-
-             </select></td>
+             <td><input id="unit" type="text" disabled="true" value="<%=lc.getLogunit()%>"/> </td>
          </tr>
          <tr>
              <th align="right">Cost :</th>
-             <td> <input id="cost" type="text"></td>
+             <td> <input id="cost" type="text" value="<%=lc.getLogcost()%>"></td>
          </tr>
          <tr>
              <th align="right">Cost Permission :</th>
-             <td> <input id="costpermission" type="text"></td>
+             <td> <input id="costpermission" type="text" value="<%=lc.getLogcost_permission()%>"></td>
          </tr>
          <tr>
          <th></th>
-         <td align="right"><input type="button" value="Save" onclick="dosave();"/></td>
+         <td align="right"><input type="button" value="Save" onclick="doEdit(<%=lc.getLogcode()%>);"/></td>
          </tr>
      </table>
     </div>
