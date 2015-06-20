@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -27,7 +28,8 @@ public class ListSubordinateServlet extends HttpServlet {
             request.getRequestDispatcher("/login.jsp").forward(request, response);
         } else {
             int employeeID = (int) session.getAttribute("userid");
-            int month=6;
+            Calendar c = Calendar.getInstance();
+            int currentMonth = c.get(Calendar.MONTH) + 1;
             RelationLogic rl = new RelationLogic();
             List<Employee> subordinateList = rl.getAllSubordinates(employeeID);
             List<Float> subordinateSalaryList=new ArrayList<Float>();
@@ -37,7 +39,7 @@ public class ListSubordinateServlet extends HttpServlet {
             for(int i=0; i<subordinateList.size(); i++)
             {
                 int subordinateID=subordinateList.get(i).getEmployeeID();
-                float salary=salaryLogic.calculateSalary(subordinateID, month);
+                float salary = salaryLogic.calculateSalary(subordinateID, currentMonth);
                 subordinateSalaryList.add(salary);
             }
 
