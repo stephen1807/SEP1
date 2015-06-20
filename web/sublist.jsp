@@ -140,6 +140,7 @@
             </tfoot>
             <%
                 List<Employee> emp = (List) request.getAttribute("subordinateList");
+                List<Float> salaryList=(List) request.getAttribute("salaryList");
                 for (int i = 0; i < emp.size(); i++) {
                     Employee e = emp.get(i);
             %>
@@ -148,7 +149,7 @@
                 <td><%=e.getEmployeeID()%></td>
                 <td><%=e.getName()%></td>
                 <td><%=e.getDepartmentID()%></td>
-                <td><%=e.getBaseSalary()%></td>
+                <td><%=salaryList.get(i)%></td>
                 <td><input type="button" value="View" onclick="doView(<%=e.getEmployeeID()%>)"/></td>
             </tr>
             </tbody>

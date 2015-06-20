@@ -1,5 +1,6 @@
 package proj.servlet;
 
+import proj.logic.SalaryLogic;
 import proj.obj.AttendanceLog;
 import proj.obj.Employee;
 import proj.obj.LogCode;
@@ -29,10 +30,10 @@ public class QueryLogServlet extends HttpServlet {
 
         List<AttendanceLog> tempList = service.getAttendanceLog(employeeID, month);
 
-
         LogCodeService lcs=LogCodeService.getInstance();
 
         List<LogCode> logCodeList= lcs.getAllLogCodes();
+
 
 
 
