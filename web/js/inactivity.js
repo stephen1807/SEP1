@@ -23,7 +23,7 @@ function CheckIdleTime() {
          oPanel.innerHTML = (IDLE_TIMEOUT - _idleSecondsCounter) + "";
     if (_idleSecondsCounter >= IDLE_TIMEOUT) {
         window.clearInterval(_idleSecondsCounter);
-        alert("you have been inactive for");
+        alert("you have been inactive for 30 minutes");
         document.location.href = "../servlet/LogoutServlet";
         document.submit();
      }

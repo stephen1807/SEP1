@@ -281,13 +281,13 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_length {
     float: left;
 }
-.dataTables_wrapper .dataTables_filter {
-    float: right;
-    text-align: right;
-}
-.dataTables_wrapper .dataTables_filter input {
-    margin-left: 0.5em;
-}
+/*.dataTables_wrapper .dataTables_filter {*/
+    /*float: right;*/
+    /*text-align: right;*/
+/*}*/
+/*.dataTables_wrapper .dataTables_filter input {*/
+    /*margin-left: 0.5em;*/
+/*}*/
 .dataTables_wrapper .dataTables_info {
     clear: both;
     float: left;
@@ -398,7 +398,7 @@ table.dataTable td {
     /* W3C */
 }
 .dataTables_wrapper .dataTables_length,
-.dataTables_wrapper .dataTables_filter,
+/*.dataTables_wrapper .dataTables_filter,*/
 .dataTables_wrapper .dataTables_info,
 .dataTables_wrapper .dataTables_processing,
 .dataTables_wrapper .dataTables_paginate {
@@ -443,13 +443,13 @@ table.dataTable td {
         margin-top: 0.5em;
     }
 }
-@media screen and (max-width: 640px) {
-    .dataTables_wrapper .dataTables_length,
-    .dataTables_wrapper .dataTables_filter {
-        float: none;
-        text-align: center;
-    }
-    .dataTables_wrapper .dataTables_filter {
-        margin-top: 0.5em;
-    }
-}
+/*@media screen and (max-width: 640px) {*/
+    /*.dataTables_wrapper .dataTables_length,*/
+    /*.dataTables_wrapper .dataTables_filter {*/
+        /*float: none;*/
+        /*text-align: center;*/
+    /*}*/
+    /*.dataTables_wrapper .dataTables_filter {*/
+        /*margin-top: 0.5em;*/
+    /*}*/
+/*}*/

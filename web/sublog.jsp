@@ -1,7 +1,5 @@
 <%@ page import="proj.obj.AttendanceLog" %>
 <%@ page import="java.util.List" %>
-<%@ page import="proj.obj.Employee" %>
-<%@ page import="proj.service.EmployeeService" %>
 <%@ page import="proj.obj.LogCode" %>
 <%--
   Created by IntelliJ IDEA.
@@ -35,7 +33,11 @@
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
     <link rel="apple-touch-icon-precomposed" href="http://www.17sucai.com/static/images/favicon.ico">
-    <script language="javascript" src="js/inactivity.js"></script>
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/table-Animation.css">
+    <script src="/js/jquery.dataTables.min.js"></script>
+    <script src="/js/demo.js"></script>
+    <script language="javascript" src="/js/inactivity.js"></script>
     <title>Attendance System</title>
 </head>
 
@@ -114,12 +116,22 @@
         <td>
             <input type="button" value ="Add Permission" onclick="doAdd(<%=request.getAttribute("employeeID")%>)"/>
         </td>
-        <table border="1" style="width:100%; left: 200px;">
+        <table id="example" class="display" cellspacing="0" width="50%" style="text-align: center">
+            <thead>
             <tr>
-                <td>Date and Time</td>
-                <td>Log Code</td>
-                <td>Log Name</td>
+                <th>Date and Time</th>
+                <th>Log Code</th>
+                <th>Log Name</th>
             </tr>
+            </thead>
+
+            <tfoot>
+            <tr>
+                <th>Date and Time</th>
+                <th>Log Code</th>
+                <th>Log Name</th>
+            </tr>
+            </tfoot>
             <%
                 List<AttendanceLog> attendanceList = (List) request.getAttribute("attendanceList");
                 List<LogCode> logCodeList=(List) request.getAttribute("logCodeList");
@@ -127,26 +139,25 @@
                     AttendanceLog al = attendanceList.get(i);
 
             %>
+            <tbody>
             <tr>
-
-                <td><%=al.getEntrydate()%>
-                </td>
-                <td><%=al.getLogcode()%>
-                </td>
+                <td><%=al.getEntrydate()%></td>
+                <td><%=al.getLogcode()%></td>
                 <% for(int j=0; j<logCodeList.size(); j++)
-                    { LogCode lc=logCodeList.get(j);
-                        if(lc.getLogcode()==al.getLogcode())
-                        {
+                { LogCode lc=logCodeList.get(j);
+                    if(lc.getLogcode()==al.getLogcode())
+                    {
                 %>
-                    <td ><%=lc.getLogname()%></td >
+                <td><%=lc.getLogname()%></td>
                 <%
                         }
                     }
 
                 %>
             </tr>
+            </tbody>
             <%
-            }
+                }
             %>
         </table>
     </div>

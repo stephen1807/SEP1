@@ -1,14 +1,6 @@
 <%@ page import="proj.obj.LogCode" %>
 <%@ page import="proj.service.LogCodeService" %>
 <%@ page import="java.util.List" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: Zo
-  Date: 5/21/2015
-  Time: 1:21 PM
-  To change this template use File | Settings | File Templates.
-  v1.1 adding content with jquery
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
   String path = request.getContextPath();
@@ -31,20 +23,15 @@
   <meta content="yes" name="apple-mobile-web-app-capable">
   <meta content="black" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
+  <link rel="apple-touch-icon-precomposed" href="http://www.17sucai.com/static/images/favicon.ico">
   <title>Attendance System</title>
+
 </head>
-<%if (session.getAttribute("userid") == null) { %>
+
+  <%if (session.getAttribute("userid") == null) { %>
 <jsp:forward page="index.jsp"></jsp:forward>
-<%} else {%>
+  <%} else {%>
 <body>
-<form id="logeditform" style="display: none;">
-  <input type="hidden" name="employeeID">
-  <input type="hidden" name="start_date">
-  <input type="hidden" name="start_time">
-  <input type="hidden" name="end_date">
-  <input type="hidden" name="end_time">
-  <input type="hidden" name="type">
-</form>
 <div id="menu">
   <div class="search_wrap">
   </div>
@@ -90,7 +77,7 @@
   <div class="wrap">
     <i class="menu_open"></i>
 
-    <div class="logo"><a title="uthml酷站大全"><img src="/css/logo.png"/></a></div>
+    <div class="logo"><a title="uthml酷站大全"><img src="css/logo.png"/></a></div>
     <i class="search_open"></i>
   </div>
   <div class="logo_msk"></div>
@@ -99,56 +86,27 @@
   <div id="sort">
   </div>
   <div id="content">
-    <table style="width: auto;  font-size:16px; padding-left:530px;">
+    <table style="width: auto; font-size:16px;">
       <tr>
         <th align="right">Employee Id :</th>
-        <td><input type="text" id="id" disabled="true" value="<%=request.getAttribute("employeeID")%>"></td>
+        <td><input type="text" id="id" disabled="true" value=""></td>
       </tr>
       <tr>
         <th align="right">Start Time :</th>
         <td><input id="date_timepicker_start" type="text"></td>
-      </tr>
-      <tr>
-        <td></td>
         <td><input id="timepicker" type="text" ></td>
       </tr>
       <tr>
         <th align="right">End Time :</th>
         <td><input id="date_timepicker_end" type="text"></td>
-      </tr>
-      <tr>
-        <td></td>
         <td><input id="timepicker1" type="text" ></td>
-      </tr>
-      <tr>
-        <th align="right">Type :</th>
-        <%
-          LogCodeService lcs=LogCodeService.getInstance();
-          List<LogCode> logCodeList= (List) lcs.getAllLogCodes();
-        %>
-        <td><select id="type">
-          <%
-            for(int i=0; i<logCodeList.size();i++)
-            {
-              LogCode lc= logCodeList.get(i);
-          %>
-              <option value="<%=lc.getLogcode()%>"><%=lc.getLogname()%></option>
-          <%
-            }
-          %>
-        </select></td>
-      </tr>
-      <tr>
-        <th></th>
-        <td align="right"><input type="button" value="Save" onclick="doSave()"/></td>
       </tr>
     </table>
   </div>
 </div>
-
-<script language="javascript" src="/js/zepto.min.js"></script>
-<script language="javascript" src="/js/fx.js"></script>
-<script language="javascript" src="/js/script.js"></script>
+<script language="javascript" src="js/zepto.min.js"></script>
+<script language="javascript" src="js/fx.js"></script>
+<script language="javascript" src="js/script.js"></script>
 </body>
 <%}%>
 <link rel="stylesheet" type="text/css" href="/css/jquery.datetimepicker.css"/ >
@@ -187,23 +145,4 @@
   });
 </script>
 
-<script type="text/javascript">
-function doSave(){
-    var logeditform=document.getElementById("logeditform");
-    var employeeID = document.getElementById("id").value;
-    var start_date = document.getElementById("date_timepicker_start").value;
-    var start_time = document.getElementById("timepicker").value;
-    var end_date = document.getElementById("date_timepicker_end").value;
-    var end_time = document.getElementById("timepicker1").value;
-    var type = document.getElementById("type").value;
-    logeditform.employeeID.value=employeeID;
-    logeditform.start_date.value=start_date;
-    logeditform.start_time.value=start_time;
-    logeditform.end_date.value=end_date;
-    logeditform.end_time.value=end_time;
-    logeditform.type.value=type;
-    logeditform.action="/servlet/AddPermissionServlet";
-    logeditform.submit();
-  }
-</script>
 </html>

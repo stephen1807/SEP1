@@ -95,8 +95,8 @@
     <div id="sort">
     </div>
     <div id="content">
-        <div><img src="images/profile.png" style="width:100px;height:100px;padding-left:390px;">
-        </div><div><table style="width:60%; padding-left: 500px;">
+        <div><img src="images/profile.png" style="width:100px;height:110px;padding-left:440px;float: left;">
+        </div><div><table style="width:20%;">
             <%
                 Employee emp = (Employee) request.getAttribute("employee");
                 java.text.DateFormat df=new java.text.SimpleDateFormat("dd/MM/yyyy");

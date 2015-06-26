@@ -90,9 +90,8 @@
 <div id="container">
     <div id="sort">
     </div>
-    <div id="content">
-        Hello,  <%=session.getAttribute("userid") %>, <%=session.getAttribute("name") %>
-        , <%=session.getAttribute("type")%>
+    <div id="content" style='position:absolute;z-index:0;left:0;top:0;width:100%;height:90%'>
+            <img src='images/QuotesBackground.jpg' style='width:100%;height:100%' alt='[]' />
     </div>
 </div>
 

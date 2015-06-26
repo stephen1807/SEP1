@@ -117,7 +117,7 @@
         <%
             LogCode lc= (LogCode)request.getAttribute("logCode");
         %>
-     <table>
+     <table style = "padding-left: 500px;">
          <tr>
              <th align="right">Log Name :</th>
                  <td><input type="text" name="name" id="name" value="<%=lc.getLogname()%>"></td>

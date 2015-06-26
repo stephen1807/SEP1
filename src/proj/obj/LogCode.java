@@ -18,7 +18,7 @@ public class LogCode {
     private boolean available;
 
     @Id
-    @GeneratedValue()
+    @GeneratedValue
     @Column(name = "logcode")
     public int getLogcode() {
         return logcode;

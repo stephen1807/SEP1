@@ -33,10 +33,10 @@
     <meta content="telephone=no" name="format-detection">
     <link rel="apple-touch-icon-precomposed" href="http://www.17sucai.com/static/images/favicon.ico">
     <script src="/js/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/table-Animation.css">
+    <link rel="stylesheet" type="text/css" href="/css/table-Animation.css">
     <script src="/js/jquery.dataTables.min.js"></script>
     <script src="/js/demo.js"></script>
-    <script language="javascript" src="js/inactivity.js"></script>
+    <script language="javascript" src="/js/inactivity.js"></script>
 
     <title>Attendance System</title>
 </head>

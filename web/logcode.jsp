@@ -29,6 +29,10 @@
     <meta content="telephone=no" name="format-detection">
     <script language="javascript" src="js/inactivity.js"></script>
     <link rel="apple-touch-icon-precomposed" href="http://www.17sucai.com/static/images/favicon.ico">
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/table-Animation.css">
+    <script src="/js/jquery.dataTables.min.js"></script>
+    <script src="/js/demo.js"></script>
     <script>
         var logined = 0
     </script>
@@ -106,21 +110,35 @@
     </div>
     <div id="content">
        <a href="lognew.jsp"><button type="submit" id="new">New Log</button></a>
-        <table border="1" style="width:50%; left: 200px;">
+
+        <table id="example" class="display" cellspacing="0" width="50%" style="text-align: center">
+            <thead>
             <tr>
-                <td>Log Id</td>
-                <td>Log Name</td>
-                <td>Log Unit</td>
-                <td>Description</td>
-                <td>Edit</td>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Details</th>
             </tr>
-            <%
+            </thead>
+
+            <tfoot>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Details</th>
+            </tr>
+            </tfoot>
+                <%
                 List<LogCode> logCodeList= (List)request.getAttribute("logCodeList");
                 for(int i=0; i<logCodeList.size(); i++)
                 {
                     LogCode lc=logCodeList.get(i);
 
-            %>
+                %>
+            <tbody>
             <tr>
                 <td><%=lc.getLogcode()%></td>
                 <td><%=lc.getLogname()%></td>
@@ -128,10 +146,13 @@
                 <td><%=lc.getLogdescription()%></td>
                 <td><input type="button" value="Edit Log Code" onclick="doEdit(<%=lc.getLogcode()%>)"/></td>
             </tr>
+            </tbody>
             <%
                 }
             %>
         </table>
+
+
     </div>
 </div>
 

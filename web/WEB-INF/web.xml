@@ -19,11 +19,6 @@
     </servlet>
 
     <servlet>
-        <servlet-name>CalculateSalaryServlet</servlet-name>
-        <servlet-class>proj.servlet.CalculateSalaryServlet</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>EmployeeProfileServlet</servlet-name>
         <servlet-class>proj.servlet.EmployeeProfileServlet</servlet-class>
     </servlet>
@@ -116,11 +111,6 @@
     <servlet-mapping>
         <servlet-name>AddPermissionServlet</servlet-name>
         <url-pattern>/servlet/AddPermissionServlet</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>CalculateSalaryServlet</servlet-name>
-        <url-pattern>/servlet/CalculateSalaryServlet</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

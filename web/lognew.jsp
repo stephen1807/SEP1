@@ -47,7 +47,6 @@
         myform.unit.value=unit;
         myform.cost.value=cost;
         myform.costpermission.value=costpermission;
-        alert (name,desc,unit,cost,costpermission);
         myform.action = "/servlet/AddLogCodeServlet";
         myform.submit();    }
 </script>
@@ -115,7 +114,7 @@
     <div id="content">
         <form id="newLogCodeForm" name="newLogCodeForm" method="post">
         </form>
-     <table>
+     <table style="padding-left: 500px;">
          <tr>
              <th align="right">Log Name :</th>
                  <td><input type="text" id="name"></td>
